@@ -46,7 +46,7 @@
      class="category-theory-js__title">Теория ES6</p>
 
       <ul v-show="taggleShowAndHideTheoryJs" class="list-links-theory">
-          <li v-for="(item,index) in arrayNameTheoryJs" :key="index"
+          <li v-for="(item,index) in sortArrayA_ZnameTheoryJs" :key="index"
            class="list-links-theory__list-link-theory">
             <router-link :to="{ path: item.split(' ').join('-').toLowerCase() }" >{{item}}</router-link>
           </li>
@@ -63,7 +63,7 @@
 
       <ul v-show="taggleShowAndHideTheoryVue" class="list-links-theory-vue">
           <!-- <input type="text" placeholder="Поиск" class="main-left-sidebar__search"> -->
-          <li v-for="(item,index) in arrayNameTheoryVue" :key="index"
+          <li v-for="(item,index) in sortArrayA_ZnameTheoryVue" :key="index"
           class="list-links-projects__list-link-theory-vue">
             <router-link :to="{ path: item.split(' ').join('-').toLowerCase() }">{{item}}</router-link>
           </li>
@@ -80,7 +80,7 @@
       
       <ul v-show="taggleShowAndHideMiniProjects" class="list-links-projects">
           <!-- <input type="text" placeholder="Поиск" class="main-left-sidebar__search"> -->
-          <li v-for="(item,index) in arrayNameMiniProjects" :key="index"
+          <li v-for="(item,index) in sortArrayA_ZnameMiniProjects" :key="index"
           class="list-links-projects__list-link-theory">
             <router-link :to="{ path: item.split(' ').join('-').toLowerCase() }">{{item}}</router-link>
           </li>
@@ -105,7 +105,7 @@ export default {
 data() {
   return {
     // Массивы и обьекты справочников ES 6 , VUE , PRODJECTS
-    arrayNameTheoryJs:['fetch', 'ajax', 'шаблон строк', 'инкремент', 'JSON','Sort','giga w'],
+    arrayNameTheoryJs:['fetch', 'Ajax', 'шаблон строк', 'инкремент', 'JSON','Sort','giga w'],
 
     arrayNameTheoryVue:['test1','test2 3'],
 
@@ -128,6 +128,7 @@ data() {
 },
 
 methods: {
+
 
   showBtnCloseAllCategory() {
 
@@ -181,6 +182,46 @@ methods: {
 
   computed: {
 
+    // 
+    // Сортировка справочников слева для трех списков по алфавиту
+  sortArrayA_ZnameTheoryJs() {
+   const newArrayNameJsLowerCase = this.arrayNameTheoryJs.map(function(item) {
+     
+       item.toLowerCase();
+      const itemWithBigLetter = item[0].toUpperCase() + item.substring(1);
+      
+      return itemWithBigLetter
+    })
+
+    return newArrayNameJsLowerCase.sort()
+  },
+
+  sortArrayA_ZnameTheoryVue() {
+   const newArrayNameVueLowerCase = this.arrayNameTheoryVue.map(function(item) {
+     
+       item.toLowerCase();
+      const itemWithBigLetter = item[0].toUpperCase() + item.substring(1);
+      
+      return itemWithBigLetter
+    })
+
+    return newArrayNameVueLowerCase.sort()
+  },
+
+    sortArrayA_ZnameMiniProjects() {
+   const newArrayMiniProjectsLowerCase = this.arrayNameMiniProjects.map(function(item) {
+     
+       item.toLowerCase();
+      const itemWithBigLetter = item[0].toUpperCase() + item.substring(1);
+      
+      return itemWithBigLetter
+    })
+
+    return newArrayMiniProjectsLowerCase.sort()
+  },
+
+// 
+// 
     getValueInputSearchFilterArrayAndPostResult() {
 // cоеденяю все списки в один массив
     const allArraysCategoryInOne = this.arrayNameTheoryJs.concat( this.arrayNameTheoryVue, this.arrayNameMiniProjects);

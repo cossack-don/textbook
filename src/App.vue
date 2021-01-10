@@ -1,11 +1,11 @@
 <template>
-  <div id="app">
+  <div id="app" class="app" >
 
     <Header class="main-header-book"/>
 
     <div class="wrapper-sidebar-main-content">
-      <LeftSidebar class="wrapper-sidebar-main-content__left-sidebar" />
-      <router-view class="wrapper-sidebar-main-content__main-content"/>
+      <LeftSidebar class="wrapper-sidebar-main-content__left-sidebar"/>
+      <router-view class="wrapper-sidebar-main-content__main-content" />
     </div>
 
   </div>
@@ -22,6 +22,24 @@ export default {
   components: {
     Header,
     LeftSidebar
+  },
+  methods: {
+//     showSidebar(e) {
+//        const header = document.querySelector('.main-header-book');
+//        const leftSidebar = document.querySelector('.wrapper-sidebar-main-content__left-sidebar');
+//        const mainContent = document.querySelector('.wrapper-sidebar-main-content__main-content');
+//        e.stopPropagation();
+//   if(e.target !== leftSidebar) {
+    
+// leftSidebar.style.display="none"
+ 
+
+// } 
+// // if(e.target == leftSidebar) {
+// //   leftSidebar.style.display="block"
+// // }
+// // console.log(event.target)
+//     }
   }
 }
 </script>
@@ -53,7 +71,7 @@ height: 94vh;
 
 .wrapper-sidebar-main-content__main-content {
   width: 80%;
-  background: plum;
+  // background: plum;
  overflow-y: scroll; /* прокрутка по вертикали */
  padding: 15px;
 }

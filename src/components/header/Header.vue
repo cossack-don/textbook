@@ -16,7 +16,10 @@ export default {
     }
   },
 methods: {
-  slow() {
+  slow(e) {
+    e.stopPropagation();
+    const leftSidebar = document.querySelector('.wrapper-sidebar-main-content__left-sidebar');
+    leftSidebar.style.display="block"
     let r = document.querySelector('.main-left-sidebar');
       
 
