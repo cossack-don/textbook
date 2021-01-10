@@ -1,5 +1,6 @@
 <template>
   <div>home page
+    test_ 1_1
       <h1>ПОДКЛЮЧИТЬ СТИЛИ ОТДЕЛЬНЫМ ФАЙЛОС ЦСС ИМПОРТ И РЕСЕТЫ</h1>
 
       <p>https://metanit.com/web/vuejs/8.2.php
