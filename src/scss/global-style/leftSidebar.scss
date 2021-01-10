@@ -1,0 +1,109 @@
+.router-link-active {
+  color: #2fa06d;
+  font-weight: 700;
+}
+
+.main-left-sidebar__search {
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+.list-links-theory__list-link-theory:first-child,
+.list-links-projects__list-link-theory:first-child,
+.list-links-projects__list-link-theory-vue:first-child {
+  padding-top: 3px;
+}
+
+.list-links-theory__list-link-theory,
+.list-links-projects__list-link-theory,
+.list-links-projects__list-link-theory-vue {
+  padding-left: 15px;
+  padding-bottom: 3px;
+  font-size: 15px;
+}
+
+.category-mini-projects {
+font-weight: 700;
+font-size: 20px;
+color: #000000;
+}
+
+.category-theory-js__title {
+color: #35495e;
+font-weight: 700;
+font-size: 20px;
+}
+
+.category-theory-vue__title {
+color: #35495e;
+font-weight: 700;
+font-size: 20px;
+margin-top: 5px;
+margin-bottom: 5px;
+}
+
+.category-mini-projects:hover,
+.category-theory-vue__title:hover,
+.category-theory-js__title:hover {
+  cursor: pointer;
+  color: #1dc579;
+  transition: 0.5s;
+}
+
+.button-close-category {
+  width: 100%;
+  padding:5px;
+  margin-bottom:15px;
+  font-family: 'Noto Sans', sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  cursor: pointer;
+  display: none;
+  background: rgb(113, 190, 201);
+  border:none;
+  border-radius: 5px;
+}
+
+.button-close-category:hover {
+  background: rgb(93, 191, 206);
+  transition: 0.5s;
+  color: #ffffff;
+}
+
+// .wrapper-mobile-icons-left {
+//   display: none;
+// }
+
+@media (max-width: 768px) {
+.wrapper-sidebar-main-content__left-sidebar {
+  // display: none;
+      position: absolute;
+    left: -25%;
+        top: 0;
+    height: 100vh;
+}
+//   .wrapper-sidebar-main-content__left-sidebar {
+//     // left: -12%;
+//     padding: 0;
+//      position: absolute;
+//     top: 0;
+//     height: 100vh;
+//     width: 10%;
+//     overflow: hidden; 
+//   }
+//   .wrapper-computer-sidebar {
+//     display: none;
+//   }
+//   .wrapper-mobile-icons-left {
+//   display: block;
+// }
+
+//   .wrapper-mobile-icons-left__list {
+//     display: flex;
+//     flex-direction: column;
+//     align-items: center;
+//     height: 100vh;
+//     justify-content: space-around;
+    
+//   }
+}

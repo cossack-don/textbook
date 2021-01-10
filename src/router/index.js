@@ -1,27 +1,55 @@
-import Vue from 'vue'
-import VueRouter from 'vue-router'
-import Home from '../views/Home.vue'
+import Vue from "vue";
+import VueRouter from "vue-router";
 
-Vue.use(VueRouter)
+// import Home from "../views/Home";
+
+// import Fetch from "../views/teoriyaJs/Fetch";
+// import Test from "@/components/HelloWorld";
+
+Vue.use(VueRouter);
 
 const routes = [
-  {
-    path: '/',
-    name: 'Home',
-    component: Home
-  },
-  {
-    path: '/about',
-    name: 'About',
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "about" */ '../views/About.vue')
-  }
-]
+    // start HOME PAGE
+    {
+        path: "/",
+        name: "Home",
+        component: () => import(/* webpackChunkName: "about" */ "@/views/Home"),
+    },
+    // end HOME PAGE
+
+    // Main url content
+    {
+        path: "/test",
+        name: "Test",
+        component: () =>
+            import(/* webpackChunkName: "about" */ "@/components/HelloWorld"),
+    },
+    {
+        path: "/fetch",
+        name: "Fetch",
+        component: () =>
+            import(/* webpackChunkName: "about" */ "@/views/teoriyaJs/Fetch"),
+    },
+    {
+        path: "/sort",
+        name: "Sort",
+        component: () =>
+            import(/* webpackChunkName: "about" */ "@/views/teoriyaJs/Sort"),
+    },
+    // end Main url content
+
+    // start 404 ERROR
+    {
+        path: "*",
+        name: "Error404",
+        component: () =>
+            import(/* webpackChunkName: "about" */ "../views/Error404.vue"),
+    },
+    // start 404 ERROR
+];
 
 const router = new VueRouter({
-  routes
-})
+    routes,
+});
 
-export default router
+export default router;

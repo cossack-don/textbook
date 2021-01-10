@@ -1,32 +1,76 @@
 <template>
   <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
+
+    <Header class="main-header-book"/>
+
+    <div class="wrapper-sidebar-main-content">
+      <LeftSidebar class="wrapper-sidebar-main-content__left-sidebar" />
+      <router-view class="wrapper-sidebar-main-content__main-content"/>
     </div>
-    <router-view/>
+
   </div>
 </template>
 
+
+<script>
+import Header from '@/components/header/Header'
+import LeftSidebar from '@/components/leftSidebar/LeftSidebar'
+
+
+export default {
+  name: 'App',
+  components: {
+    Header,
+    LeftSidebar
+  }
+}
+</script>
+
+
 <style lang="scss">
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
+
+
+
+.main-header-book {
+  height: 6vh;
+  background:#1dc579;
+  width:100%;
 }
 
-#nav {
-  padding: 30px;
+.wrapper-sidebar-main-content {
+  display: flex;
+}
 
-  a {
-    font-weight: bold;
-    color: #2c3e50;
+.wrapper-sidebar-main-content__left-sidebar{
+background: powderblue;
+width: 20%;
+ overflow-y: scroll; /* прокрутка по вертикали */
+// overflow-x: hidden; cкрывает горизонтальный скролл
+padding: 15px;
+height: 94vh;
 
-    &.router-link-exact-active {
-      color: #42b983;
-    }
-  }
+}
+
+.wrapper-sidebar-main-content__main-content {
+  width: 80%;
+  background: plum;
+ overflow-y: scroll; /* прокрутка по вертикали */
+ padding: 15px;
+}
+
+
+@media (max-width: 768px) {
+
+// .wrapper-sidebar-main-content__left-sidebar {
+//   display: none;
+// }
+
+.wrapper-sidebar-main-content__main-content {
+    width: 100%;
+    height: 94vh;
+    background: plum;
+    overflow-y: scroll;
+    padding: 15px;
+}
 }
 </style>
