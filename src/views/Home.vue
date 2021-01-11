@@ -1,5 +1,10 @@
 <template>
-  <div>home page
+  <div>
+    1. СТРУКТУРУ ПРОЕКТА СДЕЛАТЬ НОРМ И ОЧИСТИТЬ <br>
+    2. СМ КУРС JS И ЗАЛИТЬ НА ЯНДЕКС ДИСК + КОНСПЕКТ
+    <br>
+    3.СМ VUE+VUEX КУРС
+    <br><br>
 <h1>Учить фреймворк а остальной джс по хожу, так как с фрейма спрос на рынке</h1>
 <h1>Freamword drive learning</h1>
 <li style="color:red; font-weight:bold">работа -- сверстать блок бренды</li>
@@ -43,17 +48,19 @@
     <li>---Анимацию доделать</li>
   </ul>
 <!--  -->
-    <!-- <ul>
+    <ul>
       
    
     
-    <li>---</li>
-    <li>---</li>
-    <li>---</li>
-    <li>---</li>
-  </ul> -->
+    <li v-for="(item,index) in video" :key="index"><a :href="item.url" target="_blank">{{item.nameContent}}</a></li>
 
+  </ul>
 
+<div>
+  <a href="https://vk.com/doc43471214_580412033?hash=835031fea6b1191794&dl=d6ca56282167aecbf7">ТЗ НА ДЖУНА ДОКИ</a>
+  <a href="https://www.figma.com/file/k1eyyiHvBq73LMlj9dBpwX/PML_Test_task_for_Junior_Frontend-(18.12)?node-id=1%3A1636">фигма макет</a>
+  <a href="https://www.notion.so/Junior-Frontend-developer-aeeb4eac55634e11a855ae294fbe4404">tz</a>
+</div>
 
 </div>
 
@@ -77,23 +84,15 @@
 <!--  -->
 <!--  -->
 
-      <p>https://metanit.com/web/vuejs/8.2.php
+      <p>
 
-https://www.youtube.com/watch?v=rqB7jRunukw
 
-https://webdevkin.ru/posts/frontend/adminka-vue-8-vuex-practice
-
-Димыч см ютуб калан реакл камасутра
-
-http://falbar.ru/article/kak-ispolzovat-routing-v-vue-dlya-sozdaniya-xoroshego-polzovatelskogo-interfejsa
-
-https://www.youtube.com/watch?v=Xd_rxScxRWs
 
 .split(' ').join('-')
 split осуществляет разбиение строки в массив по указанному разделителю.
  join объединяет элементы массива в строку с указанным разделителем (он будет вставлен между элементами массива</p>
   
-  тз https://www.notion.so/Junior-Frontend-developer-aeeb4eac55634e11a855ae294fbe4404
+  
 
   посмотреть bim проекты как выносить роуты на компоненты
   <!--Добавление нового файла или страницы   -->
@@ -107,6 +106,12 @@ split осуществляет разбиение строки в массив �
 
 <script>
 export default {
+  computed: {
+    video() {
+            return this.$store.state.urlsVideo.arrayUrlsVideoContent
+      console.log(this.$store.state.urlsVideo.arrayUrlsVideoContent)
+    }
+  }
 
 }
 </script>
