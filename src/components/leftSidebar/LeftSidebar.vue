@@ -1,29 +1,19 @@
 <template>
-  <div class="main-left-sidebar" ref="mainLeftSidebar">
-    
-    <!-- <div class="wrapper-mobile-icons-left" ref="leftSidebarIconsMobile">
-      <div @click="taggle1" class="list-items-icons-left-sidebar__item" ref="taggleLeftSidebarMobile">=></div>
-      
-      <ul class="wrapper-mobile-icons-left__list list-items-icons-left-sidebar">
-        
-        <li class="list-items-icons-left-sidebar__item">home</li>
-        <li class="list-items-icons-left-sidebar__item">item 1</li>
-        <li class="list-items-icons-left-sidebar__item">item 2</li>
-        <li class="list-items-icons-left-sidebar__item">item 3</li>
-      </ul>
-    </div> -->
+  <div class="main-left-sidebar" >
 
-    <div class="wrapper-computer-sidebar" ref="leftSidebarComputer">
-    <!-- <div @click="taggle1" class="list-items-icons-left-sidebar__item" ref="taggleLeftSidebarMobile">=></div> -->
+    <div class="wrapper-computer-sidebar">
 
-      <!-- кнопка скрыть все уроки -->
+
+<!-- кнопка скрыть все уроки -->
     <button @click="closeAllcategory" ref="btnCloseCategory" class="button-close-category" >Закрыть все уроки</button>
 <!-- //кнопка скрыть все уроки -->
+
 
 <!-- Поиск по категориям (теория джс, проекты вью) -->
 <input @input="searchValue = $event.target.value" v-model="searchValue" type="text"
  placeholder="Поиск" class="main-left-sidebar__search">
 <!--// Поиск по категориям (теория джс, проекты вью) -->
+
 
 <!-- отрисовка что нашлось в поиске и добавление правильного url routа -->
   <div v-for="(item,index) in getValueInputSearchFilterArrayAndPostResult" :key="index">
@@ -31,11 +21,14 @@
   </div>
 <!--// отрисовка что нашлось в поиске и добавление правильного url routа -->
 
+
 <!-- сообщение "не найдено" -->
 <div  v-if="hideMessageNotItemInSearch">Ничего не найдено</div> 
 <!-- //сообщение "не найдено" -->
 
-       
+
+
+
 <!-- start список левый-сайдбар -->
  <ul @click="showBtnCloseAllCategory">
 
@@ -62,7 +55,6 @@
       class="category-theory-vue__title">Теория Vue</p>
 
       <ul v-show="taggleShowAndHideTheoryVue" class="list-links-theory-vue">
-          <!-- <input type="text" placeholder="Поиск" class="main-left-sidebar__search"> -->
           <li v-for="(item,index) in sortArrayA_ZnameTheoryVue" :key="index"
           class="list-links-projects__list-link-theory-vue">
             <router-link :to="{ path: item.split(' ').join('-').toLowerCase() }">{{item}}</router-link>
@@ -79,7 +71,6 @@
       class="category-mini-projects__title">Мини-проекты</p>
       
       <ul v-show="taggleShowAndHideMiniProjects" class="list-links-projects">
-          <!-- <input type="text" placeholder="Поиск" class="main-left-sidebar__search"> -->
           <li v-for="(item,index) in sortArrayA_ZnameMiniProjects" :key="index"
           class="list-links-projects__list-link-theory">
             <router-link :to="{ path: item.split(' ').join('-').toLowerCase() }">{{item}}</router-link>
@@ -105,7 +96,7 @@ export default {
 data() {
   return {
     // Массивы и обьекты справочников ES 6 , VUE , PRODJECTS
-    arrayNameTheoryJs:['fetch', 'Ajax', 'шаблон строк', 'инкремент', 'JSON','Sort','giga w'],
+    arrayNameTheoryJs:['Fetch', 'Ajax', 'Шаблон строк', 'Инкремент', 'JSON','Sort','Giga w'],
 
     arrayNameTheoryVue:['test1','test2 3'],
 
@@ -156,27 +147,7 @@ methods: {
     this.$refs.btnCloseCategory.style.display="none";
   },
 
-//   taggle1() {
- 
 
-
-//      if(!this.taggleLeftSidebarForMobile) {
-// this.$refs.mainLeftSidebar.style.width="10%";
-//   this.$refs.leftSidebarIconsMobile.style.display="block";
-//   this.$refs.leftSidebarComputer.style.display="none";
-
-// }
-// if(this.taggleLeftSidebarForMobile) {
-//   this.$refs.mainLeftSidebar.style.width="30%";
-//   this.$refs.leftSidebarIconsMobile.style.display="none";
-//   this.$refs.leftSidebarComputer.style.display="block";
-  
-//   //  this.$refs.taggleLeftSidebarMobile.style.display="block";
-// }
-// this.taggleLeftSidebarForMobile = !this.taggleLeftSidebarForMobile
-// // console.log(this.taggleLeftSidebarForMobile)
-    
-//   }
   
 },
 

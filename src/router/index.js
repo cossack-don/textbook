@@ -18,12 +18,7 @@ const routes = [
     // end HOME PAGE
 
     // Main url content
-    {
-        path: "/test",
-        name: "Test",
-        component: () =>
-            import(/* webpackChunkName: "about" */ "@/components/HelloWorld"),
-    },
+
     {
         path: "/fetch",
         name: "Fetch",

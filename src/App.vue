@@ -1,5 +1,5 @@
 <template>
-  <div id="app" class="app" >
+  <div id="app">
 
     <Header class="main-header-book"/>
 
@@ -23,24 +23,12 @@ export default {
     Header,
     LeftSidebar
   },
-  methods: {
-//     showSidebar(e) {
-//        const header = document.querySelector('.main-header-book');
-//        const leftSidebar = document.querySelector('.wrapper-sidebar-main-content__left-sidebar');
-//        const mainContent = document.querySelector('.wrapper-sidebar-main-content__main-content');
-//        e.stopPropagation();
-//   if(e.target !== leftSidebar) {
-    
-// leftSidebar.style.display="none"
- 
+data() {
+  return {
 
-// } 
-// // if(e.target == leftSidebar) {
-// //   leftSidebar.style.display="block"
-// // }
-// // console.log(event.target)
-//     }
   }
+},
+
 }
 </script>
 
@@ -71,17 +59,15 @@ height: 94vh;
 
 .wrapper-sidebar-main-content__main-content {
   width: 80%;
+  height: 94vh;
   // background: plum;
  overflow-y: scroll; /* прокрутка по вертикали */
  padding: 15px;
 }
 
 
+// ADAPTIVE
 @media (max-width: 768px) {
-
-// .wrapper-sidebar-main-content__left-sidebar {
-//   display: none;
-// }
 
 .wrapper-sidebar-main-content__main-content {
     width: 100%;
@@ -91,4 +77,5 @@ height: 94vh;
     padding: 15px;
 }
 }
+
 </style>

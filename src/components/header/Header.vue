@@ -1,15 +1,23 @@
 <template>
-  <div>header-static
-    <div style="margin-left:180px;" @click="slow">tagle sidebar mobile</div>
+  <div>
+
+<div class="wz">
+  <div style="margin-left:180px;" @click="slow">tagle sidebar mobile</div>
     <div class="btn-h">X</div>
-    
-    <router-link style="color:red;" to="/" >HOME</router-link>
+    <router-link style="color:red;" to="/" ><img src="./img/logo_home.png" alt="" > </router-link>
+    <router-link style="color:red;" to="/" ><img src="./img/main_logo.png" alt="" > </router-link>
+ 
+</div>
+
   </div>
   
 </template>
 
 <script>
+
+
 export default {
+
   data() {
     return {
       tagl:true
@@ -24,15 +32,11 @@ methods: {
       
 
        if(!this.tagl) {
-// this.$refs.mainLeftSidebar.style.width="10%";
-//   this.$refs.leftSidebarIconsMobile.style.display="block";
-//   this.$refs.leftSidebarComputer.style.display="none";
+
 r.style.left="0%";
 }
 if(this.tagl) {
-//   this.$refs.mainLeftSidebar.style.width="30%";
-//   this.$refs.leftSidebarIconsMobile.style.display="none";
-//   this.$refs.leftSidebarComputer.style.display="block";
+
   r.style.left="-25%";
 //   //  this.$refs.taggleLeftSidebarMobile.style.display="block";
 }
@@ -62,5 +66,11 @@ this.tagl = !this.tagl
 
 }
 
+.wz {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 15px;
+  padding-right: 15px;
+}
 
 </style>
