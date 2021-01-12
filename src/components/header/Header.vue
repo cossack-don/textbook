@@ -2,52 +2,46 @@
   <div>
 
 <div class="wz">
-  <div style="margin-left:180px;" @click="slow" class="zzzz">XXX</div>
+  <div style="margin-left:180px;" @click="btnClick" class="zzzz">XXX</div>
     <div class="btn-h">X</div>
     <router-link style="color:red;" to="/" ><img src="./img/logo_home.png" alt="" > </router-link>
     <router-link style="color:red;" to="/" ><img src="./img/main_logo.png" alt="" > </router-link>
  
 </div>
-
+<LeftSidebarq v-if="DROPDOWN_STATE" />
   </div>
   
 </template>
 
 <script>
-
+import LeftSidebarq from '@/components/leftSidebar/LeftSidebar'
+import {mapGetters, mapActions} from 'vuex'
 
 export default {
-
+  components: {
+    
+    LeftSidebarq
+  },
   data() {
     return {
-      tagl:true
+   
     }
   },
 methods: {
-  slow(e) {
-    // e.stopPropagation();
-    const leftSidebar = document.querySelector('.wrapper-sidebar-main-content__left-sidebar');
-    leftSidebar.style.display="block"
-    let r = document.querySelector('.main-left-sidebar');
-      // if(leftSidebar.style.display == "block") {
-      //   this.tagl = !this.tagl
-      // }
-// if()
-       if(!this.tagl) {
+  ...mapActions(['TOGGLE_DROPDOWN']),
+  
+  btnClick() {
+    // console.log(5)
+    this.TOGGLE_DROPDOWN()
+  },
 
-// r.style.left="0%";
-}
-if(this.tagl) {
+},
+computed: {
+  ...mapGetters([
+    'DROPDOWN_STATE'
+  ]),
 
-  // r.style.left="-25%";
-//   //  this.$refs.taggleLeftSidebarMobile.style.display="block";
-}
-this.tagl = !this.tagl
-
-    
-
-  }
-}
+},
 }
 </script>
 
@@ -78,7 +72,5 @@ this.tagl = !this.tagl
   background:red;
 }
 
-.main-header-book {
-  background:green;
-}
+
 </style>

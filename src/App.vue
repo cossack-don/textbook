@@ -35,24 +35,18 @@ wq(e) {
 
 
 
-// if(document.getElementById('box').style.display == 'none')
-  // if(sidebar.style.display == 'none') {
-  //   console.log(3)
-  // }
 
 if (!e.target.closest('.wrapper-sidebar-main-content__left-sidebar')) {
-  // if(sidebar.classList.contains('dn')) {
-  //   return
-  // }
 
 sidebar.style.display = 'none';
 
-// console.log(!e.target.closest('.wrapper-sidebar-main-content__left-sidebar'))
-// elem.classList.add('kkk');
+
 }
-  if(e.target === w ) {
-  sidebar.style.display = 'block';
-}
+//   if(e.target === w ) {
+//   sidebar.style.display = 'block';
+// }
+
+
 }
 
 }
@@ -62,7 +56,7 @@ sidebar.style.display = 'none';
 
 <style lang="scss">
 
-.dn{display: none;}
+
 
 .main-header-book {
   height: 6vh;
@@ -105,7 +99,7 @@ height: 94vh;
 }
 
 .wrapper-sidebar-main-content__left-sidebar {
-  display: none;
+  // display: none;
 }
 }
 

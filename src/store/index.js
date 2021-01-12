@@ -16,7 +16,9 @@ export default new Vuex.Store({
         theoryVue,
         MiniProjects,
         // ссылки на видео контент,курсы,ютуб
-        urlsVideo
+        urlsVideo,
+        // taggle for sidebar in header
+        toggleBurger: false,
     },
 
     // вывод одного тестового справочника, нужно тестить
@@ -27,7 +29,23 @@ export default new Vuex.Store({
 
     // },
 
-    mutations: {},
-    actions: {},
-    modules: {},
+    mutations: {
+        CHANGE_DROPDOWN: (state) => {
+            state.toggleBurger = !state.toggleBurger
+        },
+
+    },
+    actions: {
+        TOGGLE_DROPDOWN({ commit }) {
+            commit('CHANGE_DROPDOWN')
+        },
+
+
+    },
+    getters: {
+        DROPDOWN_STATE(state) {
+            return state.toggleBurger
+        },
+
+    },
 });
