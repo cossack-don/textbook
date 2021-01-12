@@ -29,15 +29,17 @@ methods: {
     const leftSidebar = document.querySelector('.wrapper-sidebar-main-content__left-sidebar');
     leftSidebar.style.display="block"
     let r = document.querySelector('.main-left-sidebar');
-      
-
+      // if(leftSidebar.style.display == "block") {
+      //   this.tagl = !this.tagl
+      // }
+// if()
        if(!this.tagl) {
 
-r.style.left="0%";
+// r.style.left="0%";
 }
 if(this.tagl) {
 
-  r.style.left="-25%";
+  // r.style.left="-25%";
 //   //  this.$refs.taggleLeftSidebarMobile.style.display="block";
 }
 this.tagl = !this.tagl
@@ -72,5 +74,7 @@ this.tagl = !this.tagl
   padding-left: 15px;
   padding-right: 15px;
 }
-
+.zzzz {
+  background:red;
+}
 </style>
