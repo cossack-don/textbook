@@ -1,10 +1,7 @@
 import Vue from "vue";
 import VueRouter from "vue-router";
 
-// import Home from "../views/Home";
-
 // import Fetch from "../views/teoriyaJs/Fetch";
-// import Test from "@/components/HelloWorld";
 
 Vue.use(VueRouter);
 
@@ -23,13 +20,33 @@ const routes = [
         path: "/fetch",
         name: "Fetch",
         component: () =>
-            import(/* webpackChunkName: "about" */ "@/views/teoriyaJs/Fetch"),
+            import(
+                /* webpackChunkName: "about" */ "@/views/theoryJsPages/Fetch"
+            ),
     },
     {
         path: "/sort",
         name: "Sort",
         component: () =>
-            import(/* webpackChunkName: "about" */ "@/views/teoriyaJs/Sort"),
+            import(
+                /* webpackChunkName: "about" */ "@/views/theoryJsPages/Sort"
+            ),
+    },
+    {
+        path: "/count",
+        name: "Count",
+        component: () =>
+            import(
+                /* webpackChunkName: "about" */ "@/views/theoryVuePages/Count"
+            ),
+    },
+    {
+        path: "/counttwo",
+        name: "CountTwo2",
+        component: () =>
+            import(
+                /* webpackChunkName: "about" */ "@/views/theoryVuePages/CountTwo"
+            ),
     },
     // end Main url content
 

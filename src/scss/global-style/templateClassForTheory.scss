@@ -1,0 +1,33 @@
+// шаблон для описания компонента теории
+
+  // класс для выделения кода теории
+  .template-code-component {
+    background: #e7ecf3;
+    border-radius: 10px;
+    padding: 15px;
+    margin: 15px;
+   display: flex;
+   justify-content: center;
+  }
+  // класс для заголовка компонента теории
+  .template-title-component {
+    color: #73abfe;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 20px;
+  }
+  // класс для определения-понятия компонента теории
+  .template-discription-component {
+    border-radius: 10px;
+    padding: 15px;
+    margin: 15px;
+    background: #dc3545;
+    color: #ffffff;
+    font-weight: bold;
+  }
+  // класс для обычного текста компонента теории
+  .template-text-component {
+    padding: 15px;
+    margin: 15px;
+    border: solid 5px powderblue;
+  }

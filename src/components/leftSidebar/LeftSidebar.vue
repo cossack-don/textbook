@@ -8,22 +8,31 @@
     <button @click="closeAllcategory" ref="btnCloseCategory" class="button-close-category" >Закрыть все уроки</button>
 <!-- //кнопка скрыть все уроки -->
 
-
+<div class="wrapper-search-close">
 <!-- Поиск по категориям (теория джс, проекты вью) -->
 <input @input="searchValue = $event.target.value" v-model="searchValue" type="text"
  placeholder="Поиск" class="main-left-sidebar__search">
+ <!-- кнопка очистить инпут -->
+ <div v-if="searchValue" class="btnCleanSearch" @click="btnCleanSearch">X</div>
 <!--// Поиск по категориям (теория джс, проекты вью) -->
+</div>
+
 
 
 <!-- отрисовка что нашлось в поиске и добавление правильного url routа -->
-  <div v-for="(item,index) in getValueInputSearchFilterArrayAndPostResult" :key="index">
-  <router-link :to="{ path: item.split(' ').join('-').toLowerCase() }">{{item}}</router-link>
-  </div>
+  <ul class="search-list-links">
+    <li v-if="searchValue" class="search-list-links__text-search">Нашло в поиске</li>
+
+    <li v-for="(item,index) in getValueInputSearchFilterArrayAndPostResult" :key="index">
+      <router-link :to="{ path: item.split(' ').join('-').toLowerCase() }">{{item}}</router-link>
+    </li>
+  
+  </ul>
 <!--// отрисовка что нашлось в поиске и добавление правильного url routа -->
 
 
 <!-- сообщение "не найдено" -->
-<div  v-if="hideMessageNotItemInSearch">Ничего не найдено</div> 
+<div v-if="hideMessageNotItemInSearch" class="nothing-found">Ничего не найдено</div> 
 <!-- //сообщение "не найдено" -->
 
 
@@ -95,15 +104,8 @@ export default {
 
 data() {
   return {
-    // Массивы и обьекты справочников ES 6 , VUE , PRODJECTS
-    arrayNameTheoryJs:['Fetch', 'Ajax', 'Шаблон строк', 'Инкремент', 'JSON','Sort','Giga w'],
-
-    arrayNameTheoryVue:['test1','test2 3'],
-
-    arrayNameMiniProjects:['test122','test2111 3'],
-
     newArrayBeforeFilterInSearch:[],
-// конекц     // Массивы и обьекты справочников ES 6 , VUE , PRODJECTS
+
 
 // Поиск по справочникам
     searchValue:'',
@@ -119,8 +121,12 @@ data() {
 },
 
 methods: {
+btnCleanSearch() {
+this.searchValue = '';
+},
 
 
+ 
   showBtnCloseAllCategory() {
 
     if(this.taggleShowAndHideTheoryVue === false ||
@@ -156,7 +162,7 @@ methods: {
     // 
     // Сортировка справочников слева для трех списков по алфавиту
   sortArrayA_ZnameTheoryJs() {
-   const newArrayNameJsLowerCase = this.arrayNameTheoryJs.map(function(item) {
+   const newArrayNameJsLowerCase = this.$store.state.theoryJs.arrayNameTheoryJs.map(function(item) {
      
        item.toLowerCase();
       const itemWithBigLetter = item[0].toUpperCase() + item.substring(1);
@@ -168,7 +174,7 @@ methods: {
   },
 
   sortArrayA_ZnameTheoryVue() {
-   const newArrayNameVueLowerCase = this.arrayNameTheoryVue.map(function(item) {
+   const newArrayNameVueLowerCase = this.$store.state.theoryVue.arrayNameTheoryVue.map(function(item) {
      
        item.toLowerCase();
       const itemWithBigLetter = item[0].toUpperCase() + item.substring(1);
@@ -180,7 +186,7 @@ methods: {
   },
 
     sortArrayA_ZnameMiniProjects() {
-   const newArrayMiniProjectsLowerCase = this.arrayNameMiniProjects.map(function(item) {
+   const newArrayMiniProjectsLowerCase = this.$store.state.MiniProjects.arrayNameMiniProjects.map(function(item) {
      
        item.toLowerCase();
       const itemWithBigLetter = item[0].toUpperCase() + item.substring(1);
@@ -195,7 +201,7 @@ methods: {
 // 
     getValueInputSearchFilterArrayAndPostResult() {
 // cоеденяю все списки в один массив
-    const allArraysCategoryInOne = this.arrayNameTheoryJs.concat( this.arrayNameTheoryVue, this.arrayNameMiniProjects);
+    const allArraysCategoryInOne = this.$store.state.theoryJs.arrayNameTheoryJs.concat( this.$store.state.theoryVue.arrayNameTheoryVue, this.$store.state.MiniProjects.arrayNameMiniProjects);
     // allArraysCategoryInOne.sort()
 // перезаписываю в переменую пустой массив (так как сразу не получилось записать,выдает ошибку) из за того что конкат возвращает новвый массив
     this.newArrayBeforeFilterInSearch = 
@@ -227,3 +233,51 @@ methods: {
   }
 }
 </script>
+
+<style lang="scss">
+.nothing-found {
+  color: #dc3545;
+  font-size: 16px;
+  font-weight: 700;
+  background: #fff3cd;
+  padding: 5px;
+}
+.wrapper-search-close {
+  position: relative;
+}
+.btnCleanSearch {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  width:25px;
+  height: 25px;
+  background: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  border-radius: 50%;
+  font-weight: 700;
+  padding-top: 1px;
+}
+.btnCleanSearch:hover {
+  cursor: pointer;
+  transition: 0.5s;
+  background: #dc3545;
+}
+.btnCleanSearch:active {
+background: #cc8e95;
+transition: none;
+}
+.search-list-links__text-search {
+  text-align: center;
+}
+.search-list-links {
+background: #fff3cd;
+border-radius: 5px;
+margin-bottom: 10px;
+}
+
+.search-list-links li {
+  padding: 5px;
+}
+</style>

@@ -1,5 +1,8 @@
 <template>
   <div>
+    <p>Добавить название компонента в массив store=> arrayNameMiniProd(vue,js)</p>
+    <p>добавить компонент.vue в папку views => theoryvuepages </p>
+    <p>добавить маршрут в router component: () => import(/* webpackChunkName: "about" */ "@/views/Home")</p>
     1. СТРУКТУРУ ПРОЕКТА СДЕЛАТЬ НОРМ И ОЧИСТИТЬ <br>
     2. СМ КУРС JS И ЗАЛИТЬ НА ЯНДЕКС ДИСК + КОНСПЕКТ
     <br>
@@ -52,7 +55,7 @@
       
    
     
-    <li v-for="(item,index) in video" :key="index"><a :href="item.url" target="_blank">{{item.nameContent}}</a></li>
+    <li v-for="(item,index) in arrayWithUrlsVideoAndName()" :key="index"><a :href="item.url" target="_blank">{{item.nameContent}}</a></li>
 
   </ul>
 
@@ -106,11 +109,15 @@ split осуществляет разбиение строки в массив �
 
 <script>
 export default {
-  computed: {
-    video() {
+  methods: {
+    arrayWithUrlsVideoAndName() {
+      
             return this.$store.state.urlsVideo.arrayUrlsVideoContent
-      console.log(this.$store.state.urlsVideo.arrayUrlsVideoContent)
-    }
+    },
+
+  },
+  computed: {
+
   }
 
 }

@@ -1,11 +1,21 @@
 .router-link-active {
-  color: #2fa06d;
+  // color: #2fa06d;
+  color: #dc3545;
   font-weight: 700;
 }
 
 .main-left-sidebar__search {
   width: 100%;
   margin-bottom: 15px;
+  padding: 12px;
+  background: #71bec9;
+  border: none;
+  border-radius: 15px;
+}
+.main-left-sidebar__search::placeholder {
+color: #007bff;
+font-size: 16px;
+font-weight: 700;
 }
 
 .list-links-theory__list-link-theory:first-child,
@@ -52,7 +62,7 @@ margin-bottom: 5px;
 
 .button-close-category {
   width: 100%;
-  padding:5px;
+  padding:10px;
   margin-bottom:15px;
   font-family: 'Noto Sans', sans-serif;
   font-weight: 700;
@@ -68,6 +78,9 @@ margin-bottom: 5px;
   background: rgb(93, 191, 206);
   transition: 0.5s;
   color: #ffffff;
+  -webkit-box-shadow: 4px 4px 30px 0px rgba(34, 60, 80, 0.2);
+  -moz-box-shadow: 4px 4px 30px 0px rgba(34, 60, 80, 0.2);
+  box-shadow: 4px 4px 30px 0px rgba(34, 60, 80, 0.2);
 }
 
 // .wrapper-mobile-icons-left {
