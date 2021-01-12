@@ -1,10 +1,10 @@
 <template>
-  <div id="app">
+  <div id="app" @click="wq">
 
-    <Header class="main-header-book"/>
+    <Header class="main-header-book" />
 
-    <div class="wrapper-sidebar-main-content">
-      <LeftSidebar class="wrapper-sidebar-main-content__left-sidebar"/>
+    <div class="wrapper-sidebar-main-content" >
+      <LeftSidebar class="wrapper-sidebar-main-content__left-sidebar" />
       <router-view class="wrapper-sidebar-main-content__main-content" />
     </div>
 
@@ -28,14 +28,41 @@ data() {
 
   }
 },
+methods: {
+wq(e) {
+  let sidebar = document.querySelector('.wrapper-sidebar-main-content__left-sidebar');
+    let w = document.querySelector('.zzzz');
 
+
+
+// if(document.getElementById('box').style.display == 'none')
+  // if(sidebar.style.display == 'none') {
+  //   console.log(3)
+  // }
+
+if (!e.target.closest('.wrapper-sidebar-main-content__left-sidebar')) {
+  // if(sidebar.classList.contains('dn')) {
+  //   return
+  // }
+
+sidebar.style.display = 'none';
+
+// console.log(!e.target.closest('.wrapper-sidebar-main-content__left-sidebar'))
+// elem.classList.add('kkk');
+}
+  if(e.target === w ) {
+  sidebar.style.display = 'block';
+}
+}
+
+}
 }
 </script>
 
 
 <style lang="scss">
 
-
+.dn{display: none;}
 
 .main-header-book {
   height: 6vh;
@@ -75,6 +102,10 @@ height: 94vh;
     background: plum;
     overflow-y: scroll;
     padding: 15px;
+}
+
+.wrapper-sidebar-main-content__left-sidebar {
+  display: none;
 }
 }
 

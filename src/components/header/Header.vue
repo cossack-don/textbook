@@ -2,7 +2,7 @@
   <div>
 
 <div class="wz">
-  <div style="margin-left:180px;" @click="slow">tagle sidebar mobile</div>
+  <div style="margin-left:180px;" @click="slow" class="zzzz">XXX</div>
     <div class="btn-h">X</div>
     <router-link style="color:red;" to="/" ><img src="./img/logo_home.png" alt="" > </router-link>
     <router-link style="color:red;" to="/" ><img src="./img/main_logo.png" alt="" > </router-link>
@@ -25,7 +25,7 @@ export default {
   },
 methods: {
   slow(e) {
-    e.stopPropagation();
+    // e.stopPropagation();
     const leftSidebar = document.querySelector('.wrapper-sidebar-main-content__left-sidebar');
     leftSidebar.style.display="block"
     let r = document.querySelector('.main-left-sidebar');
