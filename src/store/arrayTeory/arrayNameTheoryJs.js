@@ -1,11 +1,10 @@
 export default {
     arrayNameTheoryJs: [
         "Fetch",
-        "Ajax",
-        "Шаблон строк",
-        "Инкремент",
-        "JSON",
+        "Console",
+        "Переменные",
         "Sort",
-        "Giga w",
+        "Типы данных",
     ],
 };
+// Variable

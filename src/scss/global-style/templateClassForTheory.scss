@@ -1,7 +1,7 @@
 // шаблон для описания компонента теории
 
   // класс для выделения кода теории
-  .template-code-component {
+  .template-code-component-wrapper {
     background: #e7ecf3;
     border-radius: 10px;
     padding: 15px;
@@ -31,3 +31,15 @@
     margin: 15px;
     border: solid 5px powderblue;
   }
+
+  .template-style-code {
+    color: #35495e;
+    font-size: 16px;
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: bold;
+  }
+//  шаблон выделения текста
+.template-marker-text-red {
+  color:#dc3545;
+}
+// <span class="template-marker-text-red ">-var</span>
