@@ -43,3 +43,18 @@
   color:#dc3545;
 }
 // <span class="template-marker-text-red ">-var</span>
+
+// template line для разделения линия
+.template-line {
+  width: 50%;
+  height: 2px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  background: #dc3545;
+}
+
+// шаблон адаптивной фотографии
+.template-image {
+  width:100%;
+  height:auto
+}
