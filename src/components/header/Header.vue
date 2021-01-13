@@ -1,14 +1,20 @@
 <template>
   <div>
 
-<div class="wz">
-  <div style="margin-left:180px;" @click="btnClick" class="zzzz">XXX</div>
-    <div class="btn-h">X</div>
-    <router-link style="color:red;" to="/" ><img src="./img/logo_home.png" alt="" > </router-link>
-    <router-link style="color:red;" to="/" ><img src="./img/main_logo.png" alt="" > </router-link>
+<!-- <div class="wz"> -->
+  <!-- @click="btnClick" -->
+  <div  @click="m" class="zzzz">open sidebar</div>
+    
+    <!-- <router-link style="color:red;" to="/" ><img src="./img/logo_home.png" alt="" > </router-link> -->
+    
  
+<!-- </div> -->
+<div>
+<div class="hz">Freamwork drive learning</div>
 </div>
-<LeftSidebarq v-if="DROPDOWN_STATE" />
+<div>
+<router-link style="color:red;" to="/" ><img src="./img/main_logo.png" alt="" class="img_logo"> </router-link>
+</div>
   </div>
   
 </template>
@@ -27,21 +33,20 @@ export default {
    
     }
   },
-methods: {
-  ...mapActions(['TOGGLE_DROPDOWN']),
-  
-  btnClick() {
-    // console.log(5)
-    this.TOGGLE_DROPDOWN()
-  },
+  methods: {
+    m() {
+       let sidebar = document.querySelector('.wrapper-sidebar-main-content__left-sidebar');
+    let w = document.querySelector('.zzzz');
+let main = document.querySelector('.wrapper-sidebar-main-content__main-content')
 
-},
-computed: {
-  ...mapGetters([
-    'DROPDOWN_STATE'
-  ]),
+// w.classList.remove("dnsq");
+// w.classList.add("dns");
+sidebar.classList.add("db")
 
-},
+    }
+  }
+
+
 }
 </script>
 
@@ -54,23 +59,55 @@ computed: {
   display: none;
 }
 
-
-@media (max-width: 768px) {
-  .btn-h {
-    display: block;
-  }
-
+.hz {
+  font-family: 'Potta One', cursive;
+  color: yellow;
+  font-size: 26px;
+  font-weight: 400;
+  letter-spacing: 2px;
 }
 
-.wz {
+@media (min-width: 768px) {
+.zzzz {
+display: none;
+
+}
+}
+/* .wz {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   padding-left: 15px;
   padding-right: 15px;
-}
+} */
 .zzzz {
   background:red;
 }
 
+.main-header-book {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+    padding-left: 15px;
+  padding-right: 15px;
+}
+
+.img_logo {
+width: 65%;
+height: auto;
+padding: 5px;
+border-radius: 50%;
+}
+.img_logo:hover {
+  transition: 0.5s;
+  background: powderblue;
+  width: 70%;
+  padding: 5px;
+
+}
+.img_logo:active {
+background: #71bec9;
+
+}
 
 </style>

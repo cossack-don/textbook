@@ -3,7 +3,7 @@
 
     <div class="wrapper-computer-sidebar">
 
-
+<div @click="btnCloseSidebar" class="btn-close-sidebar">close sidebar</div>
 <!-- кнопка скрыть все уроки -->
     <button @click="closeAllcategory" ref="btnCloseCategory" class="button-close-category" >Закрыть все уроки</button>
 <!-- //кнопка скрыть все уроки -->
@@ -121,6 +121,14 @@ data() {
 },
 
 methods: {
+  btnCloseSidebar() {
+ let sidebar = document.querySelector('.wrapper-sidebar-main-content__left-sidebar');
+
+
+sidebar.classList.add("dn");
+
+  },
+
 btnCleanSearch() {
 this.searchValue = '';
 },
@@ -279,5 +287,15 @@ margin-bottom: 10px;
 
 .search-list-links li {
   padding: 5px;
+}
+
+.btn-close-sidebar {
+  background: yellow;
+}
+
+@media (min-width: 768px) {
+ .btn-close-sidebar {
+   display: none;
+ } 
 }
 </style>

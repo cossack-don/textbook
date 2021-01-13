@@ -7,7 +7,7 @@ import theoryVue from "./arrayTeory/arrayNameTheoryVue";
 import MiniProjects from "./arrayTeory/arrayNameMiniProjects";
 
 // файл по импорту ссылок с видео курсов и ютуб ссылок
-import urlsVideo from "./urlsVideoContent"
+import urlsVideo from "./urlsVideoContent";
 Vue.use(Vuex);
 
 export default new Vuex.Store({
@@ -18,7 +18,6 @@ export default new Vuex.Store({
         // ссылки на видео контент,курсы,ютуб
         urlsVideo,
         // taggle for sidebar in header
-        toggleBurger: false,
     },
 
     // вывод одного тестового справочника, нужно тестить
@@ -29,23 +28,7 @@ export default new Vuex.Store({
 
     // },
 
-    mutations: {
-        CHANGE_DROPDOWN: (state) => {
-            state.toggleBurger = !state.toggleBurger
-        },
-
-    },
-    actions: {
-        TOGGLE_DROPDOWN({ commit }) {
-            commit('CHANGE_DROPDOWN')
-        },
-
-
-    },
-    getters: {
-        DROPDOWN_STATE(state) {
-            return state.toggleBurger
-        },
-
-    },
+    mutations: {},
+    actions: {},
+    getters: {},
 });

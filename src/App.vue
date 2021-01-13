@@ -32,22 +32,26 @@ methods: {
 wq(e) {
   let sidebar = document.querySelector('.wrapper-sidebar-main-content__left-sidebar');
     let w = document.querySelector('.zzzz');
+let main = document.querySelector('.wrapper-sidebar-main-content__main-content')
 
 
-
-
+if (document.documentElement.clientWidth < 768) {
+  
 if (!e.target.closest('.wrapper-sidebar-main-content__left-sidebar')) {
 
-sidebar.style.display = 'none';
+sidebar.classList.add("dn");
 
-
-}
-//   if(e.target === w ) {
-//   sidebar.style.display = 'block';
-// }
-
+} 
 
 }
+if(e.target === w){
+  console.log(3)
+  sidebar.classList.remove("dn")
+  
+}
+
+},
+
 
 }
 }
@@ -56,8 +60,18 @@ sidebar.style.display = 'none';
 
 <style lang="scss">
 
-
-
+.db {
+  display:block;
+}
+.dn {
+  display: none;
+}
+.dns {
+display: none;  
+}
+.dnsq {
+    display:block;
+}
 .main-header-book {
   height: 6vh;
   background:#1dc579;
@@ -98,9 +112,15 @@ height: 94vh;
     padding: 15px;
 }
 
-.wrapper-sidebar-main-content__left-sidebar {
-  // display: none;
-}
-}
 
+}
+@media (min-width: 768px) {
+.wrapper-sidebar-main-content__left-sidebar {
+  display: block;
+  width:20%;
+}
+.wrapper-sidebar-main-content__main-content {
+  width:80%;
+}
+}
 </style>
