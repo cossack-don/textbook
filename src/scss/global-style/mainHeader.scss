@@ -6,9 +6,7 @@
     letter-spacing: 2px;
   }
   
-  .btn-open-sidebar {
-    background:red;
-  }
+
   
   .main-header-book {
     display: flex;
@@ -34,7 +32,6 @@
   .img_logo:hover {
     transition: 0.5s;
     background: powderblue;
-    width: 70%;
     padding: 5px;
   }
 
@@ -42,6 +39,23 @@
   background: #71bec9;
   }
   
+  .burger-icon {
+    width: 45px;
+    height: auto;
+    padding: 5px;
+  }
+
+  .burger-icon:hover {
+    transition: 0.5s;
+    background: powderblue;
+    border-radius: 10%;
+    cursor: pointer;
+  }
+
+  .burger-icon:active {
+    background: #71bec9;
+  }
+
    // ADAPTIVE
    
   @media (min-width: 768px) {

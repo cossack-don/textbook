@@ -136,12 +136,33 @@ margin-bottom: 10px;
   padding: 5px;
 }
 
+.wrapper-btn-close-sidebar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  margin-bottom: 15px;
+}
 .btn-close-sidebar {
-  background: yellow;
+  width: 60px;
+  height: 60px;
+  padding: 5px;
 }
 
+.btn-close-sidebar:hover {
+  transition: 0.5s;
+  background: #ffffff;
+  border-radius: 10%;
+  cursor: pointer;
+}
+
+.btn-close-sidebar:active {
+  background: yellow;
+}
  // ADAPTIVE
- 
+
+
+
 @media (max-width: 768px) {
   .wrapper-sidebar-main-content__left-sidebar {
       position: absolute;

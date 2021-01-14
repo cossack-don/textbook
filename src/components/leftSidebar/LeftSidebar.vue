@@ -3,7 +3,7 @@
 
     <div class="wrapper-computer-sidebar">
 
-<div @click="btnCloseSidebar" class="btn-close-sidebar">close sidebar</div>
+<div @click="btnCloseSidebar" class="wrapper-btn-close-sidebar"><img src="./closed.svg" alt="" class="btn-close-sidebar"></div>
 
 
 <!-- кнопка скрыть все уроки -->

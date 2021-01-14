@@ -3,10 +3,9 @@
   <div>
 <!-- конец тут работает класс .main-header-book он присвоен компоненту header vue для обертки главной-->
 
-<div  @click="btnClickOpenSidebar" class="btn-open-sidebar">open sidebar</div>
-    
-<div class="header-slogan">Freamwork drive learning</div>
 
+<img src="./img/icon-burger.svg" alt="" @click="btnClickOpenSidebar" class="btn-open-sidebar burger-icon">
+<div class="header-slogan">Freamwork drive learning</div>
 <router-link to="/" class="link-logo"><img src="./img/main_logo.png" alt="" class="img_logo"> </router-link>
 
 
