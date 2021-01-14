@@ -8,7 +8,7 @@
 //   
 
   .main-header-book {
-    height: 6vh;
+    height: 10vh;
     background:#1dc579;
     width:100%;
   }
@@ -23,12 +23,12 @@
    overflow-y: scroll; /* прокрутка по вертикали */
   // overflow-x: hidden; cкрывает горизонтальный скролл
   padding: 15px;
-  height: 94vh;
+  height: 90vh;
   }
   
   .wrapper-sidebar-main-content__main-content {
     width: 80%;
-    height: 94vh;
+    height: 90vh;
     // background: plum;
    overflow-y: scroll; /* прокрутка по вертикали */
    padding: 15px;
@@ -39,14 +39,14 @@
   @media (max-width: 768px) {
     .wrapper-sidebar-main-content__main-content {
         width: 100%;
-        height: 94vh;
+        height: 90vh;
         background: plum;
         overflow-y: scroll;
         padding: 15px;
     }
 
   }
-
+// min-width
   @media (min-width: 768px) {
     .wrapper-sidebar-main-content__left-sidebar {
         display: block;
@@ -54,6 +54,6 @@
     }
     
     .wrapper-sidebar-main-content__main-content {
-        width:80%;
+        // width:80%;
     }
   }

@@ -34,7 +34,7 @@
     
     -Boolean логическое отрицание !true (будет false), !false(будет true) <br>
     -Boolean используют first && second (и), first || second (или) <br>
-
+    -Boolean порядок выполнения вначале !(не) потом приоритет && (и) и потом || (или)
     <div class="template-line"></div>
 
     <span class="template-marker-text-red ">Оператор &&</span>

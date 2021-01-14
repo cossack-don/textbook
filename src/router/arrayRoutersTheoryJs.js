@@ -34,6 +34,20 @@ const arrayRoutersTheoryJs = [
                 /* webpackChunkName: "about" */ "@/views/theoryJsPages/Типы данных"
             ),
     },
+    {
+        path: "/if-else",
+        component: () =>
+            import(
+                /* webpackChunkName: "about" */ "@/views/theoryJsPages/OperatorIfElse"
+            ),
+    },
+    {
+        path: "/switch",
+        component: () =>
+            import(
+                /* webpackChunkName: "about" */ "@/views/theoryJsPages/Switch"
+            ),
+    },
 ];
 
 export default arrayRoutersTheoryJs;
