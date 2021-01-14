@@ -1,10 +1,3 @@
 export default {
-    arrayNameTheoryJs: [
-        "Fetch",
-        "Console",
-        "Переменные",
-        "Sort",
-        "Типы данных",
-    ],
+    arrayNameTheoryJs: ["Fetch", "Console", "Variable", "Sort", "Data types"],
 };
-// Variable

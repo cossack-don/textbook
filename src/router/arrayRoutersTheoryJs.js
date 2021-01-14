@@ -14,7 +14,7 @@ const arrayRoutersTheoryJs = [
             ),
     },
     {
-        path: "/переменные",
+        path: "/variable",
         component: () =>
             import(
                 /* webpackChunkName: "about" */ "@/views/theoryJsPages/Переменные"
@@ -28,7 +28,7 @@ const arrayRoutersTheoryJs = [
             ),
     },
     {
-        path: "/типы-данных",
+        path: "/data-types",
         component: () =>
             import(
                 /* webpackChunkName: "about" */ "@/views/theoryJsPages/Типы данных"

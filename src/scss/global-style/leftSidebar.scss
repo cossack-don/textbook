@@ -12,6 +12,7 @@
   border: none;
   border-radius: 15px;
 }
+
 .main-left-sidebar__search::placeholder {
 color: #007bff;
 font-size: 16px;
@@ -82,41 +83,75 @@ margin-bottom: 5px;
   -moz-box-shadow: 4px 4px 30px 0px rgba(34, 60, 80, 0.2);
   box-shadow: 4px 4px 30px 0px rgba(34, 60, 80, 0.2);
 }
+// 
+.nothing-found {
+  color: #dc3545;
+  font-size: 16px;
+  font-weight: 700;
+  background: #fff3cd;
+  padding: 5px;
+}
 
-// .wrapper-mobile-icons-left {
-//   display: none;
-// }
+.wrapper-search-close {
+  position: relative;
+}
 
+.btnCleanSearch {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  width:25px;
+  height: 25px;
+  background: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  border-radius: 50%;
+  font-weight: 700;
+  padding-top: 1px;
+}
+
+.btnCleanSearch:hover {
+  cursor: pointer;
+  transition: 0.5s;
+  background: #dc3545;
+}
+
+.btnCleanSearch:active {
+background: #cc8e95;
+transition: none;
+}
+
+.search-list-links__text-search {
+  text-align: center;
+}
+
+.search-list-links {
+background: #fff3cd;
+border-radius: 5px;
+margin-bottom: 10px;
+}
+
+.search-list-links li {
+  padding: 5px;
+}
+
+.btn-close-sidebar {
+  background: yellow;
+}
+
+ // ADAPTIVE
+ 
 @media (max-width: 768px) {
-.wrapper-sidebar-main-content__left-sidebar {
-  // display: none;
+  .wrapper-sidebar-main-content__left-sidebar {
       position: absolute;
-    // left: -25%;
-        top: 0;
-    height: 100vh;
+      top: 0;
+      height: 100vh;
+  }
 }
-//   .wrapper-sidebar-main-content__left-sidebar {
-//     // left: -12%;
-//     padding: 0;
-//      position: absolute;
-//     top: 0;
-//     height: 100vh;
-//     width: 10%;
-//     overflow: hidden; 
-//   }
-//   .wrapper-computer-sidebar {
-//     display: none;
-//   }
-//   .wrapper-mobile-icons-left {
-//   display: block;
-// }
 
-//   .wrapper-mobile-icons-left__list {
-//     display: flex;
-//     flex-direction: column;
-//     align-items: center;
-//     height: 100vh;
-//     justify-content: space-around;
-    
-//   }
-}
+@media (min-width: 768px) {
+  .btn-close-sidebar {
+    display: none;
+  } 
+ }

@@ -17,16 +17,9 @@ export default new Vuex.Store({
         MiniProjects,
         // ссылки на видео контент,курсы,ютуб
         urlsVideo,
+
         // taggle for sidebar in header
     },
-
-    // вывод одного тестового справочника, нужно тестить
-    // computed
-    // one() {
-    //   // return this.$store.state.urls
-    //   console.log(this.$store.state.theoryJs.arrayNameTheoryJs)
-
-    // },
 
     mutations: {},
     actions: {},

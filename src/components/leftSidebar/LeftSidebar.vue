@@ -4,6 +4,8 @@
     <div class="wrapper-computer-sidebar">
 
 <div @click="btnCloseSidebar" class="btn-close-sidebar">close sidebar</div>
+
+
 <!-- кнопка скрыть все уроки -->
     <button @click="closeAllcategory" ref="btnCloseCategory" class="button-close-category" >Закрыть все уроки</button>
 <!-- //кнопка скрыть все уроки -->
@@ -13,7 +15,7 @@
 <input @input="searchValue = $event.target.value" v-model="searchValue" type="text"
  placeholder="Поиск" class="main-left-sidebar__search">
  <!-- кнопка очистить инпут -->
- <div v-if="searchValue" class="btnCleanSearch" @click="btnCleanSearch">X</div>
+ <div v-if="searchValue" class="btnCleanSearch" @click.stop="btnCleanSearch">X</div>
 <!--// Поиск по категориям (теория джс, проекты вью) -->
 </div>
 
@@ -92,6 +94,7 @@
 
    </ul>
 <!-- end список левый-сайдбар -->
+<router-link to="">Основные ссылки</router-link>
     </div>
 
   </div>
@@ -121,18 +124,16 @@ data() {
 },
 
 methods: {
+
   btnCloseSidebar() {
- let sidebar = document.querySelector('.wrapper-sidebar-main-content__left-sidebar');
+ const sidebar = document.querySelector('.wrapper-sidebar-main-content__left-sidebar');
 
-
-sidebar.classList.add("dn");
-
+  sidebar.classList.add("hide-block");
   },
 
 btnCleanSearch() {
 this.searchValue = '';
 },
-
 
  
   showBtnCloseAllCategory() {
@@ -243,59 +244,6 @@ this.searchValue = '';
 </script>
 
 <style lang="scss">
-.nothing-found {
-  color: #dc3545;
-  font-size: 16px;
-  font-weight: 700;
-  background: #fff3cd;
-  padding: 5px;
-}
-.wrapper-search-close {
-  position: relative;
-}
-.btnCleanSearch {
-  position: absolute;
-  top: 8px;
-  right: 8px;
-  width:25px;
-  height: 25px;
-  background: #ffffff;
-  display: flex;
-  justify-content: center;
-  align-self: center;
-  border-radius: 50%;
-  font-weight: 700;
-  padding-top: 1px;
-}
-.btnCleanSearch:hover {
-  cursor: pointer;
-  transition: 0.5s;
-  background: #dc3545;
-}
-.btnCleanSearch:active {
-background: #cc8e95;
-transition: none;
-}
-.search-list-links__text-search {
-  text-align: center;
-}
-.search-list-links {
-background: #fff3cd;
-border-radius: 5px;
-margin-bottom: 10px;
-}
 
-.search-list-links li {
-  padding: 5px;
-}
 
-.btn-close-sidebar {
-  background: yellow;
-}
-
-@media (min-width: 768px) {
- .btn-close-sidebar {
-   display: none;
- } 
-}
 </style>

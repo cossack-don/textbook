@@ -1,5 +1,37 @@
 <template>
   <div>
+
+    <h2 class="template-title-component">Полезные советы</h2>
+    <div class="template-code-component-wrapper">
+      <ul>
+        <li><span class="template-marker-text-red-bold">Не распыляться , учить одно</span></li>
+        <li><span class="template-marker-text-blue-bold">Не спрашивать Леню</span></li>
+        <li><span class="template-marker-text-red-bold">Смотреть как пишут опытные прогеры код и где косячут сколько думают</span></li>
+        <li><span class="template-marker-text-blue-bold">Учить теорию и сразу писать код , лучше небольшими порциями</span></li>
+        <li><span class="template-marker-text-red-bold">Мотивация и отдых</span></li>
+        <li><span class="template-marker-text-blue-bold">Не доводить до идеала, делать чтобы просто поначалу работало а потом рефакторить</span></li>
+      </ul>
+    </div>
+
+
+      <h2 class="template-title-component">Cписок основных задач</h2>
+      <div class="template-code-component-wrapper">
+        <ul>
+          <li><span class="template-marker-text-red-bold">Верстка брендов, доделать</span></li>
+          <li>Очистить проект от лишнего и выровнять</li>
+          <li>Смотреть уроки по JS, Vue и делать конспект</li>
+        </ul>
+      </div>
+
+      <h2 class="template-title-component">Алгоритм добавление компонента теории в код</h2>
+      <div class="template-code-component-wrapper">
+        <ul>
+          <li>1</li>
+          <li>1</li>
+          <li>1</li>
+        </ul>
+      </div>
+
     <p>Добавить название компонента в массив store=> arrayNameMiniProd(vue,js)</p>
     <p>добавить компонент.vue в папку views => theoryvuepages </p>
     <p>добавить маршрут в router component: () => import(/* webpackChunkName: "about" */ "@/views/Home")</p>
@@ -66,17 +98,6 @@
 </div>
 
 </div>
-
-<h1>Полезные советы</h1>
-  <ul>
-<li>Не распыляться , учить одно</li>
-<li>не спрашивать Леню</li>
-<li>смотреть как пишут опытные прогеры код и где косячут сколько думают</li>
-<li>учить теорию и сразу писать код , лучше небольшими порциями</li>
-<li>мотивация и отдых</li>
-<li>не доводить до идеала, делать чтобы просто поначалу работало а потом рефакторить</li>
-  </ul>
-
 
 
 

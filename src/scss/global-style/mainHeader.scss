@@ -1,0 +1,51 @@
+.header-slogan {
+    font-family: 'Potta One', cursive;
+    color: yellow;
+    font-size: 26px;
+    font-weight: 400;
+    letter-spacing: 2px;
+  }
+  
+  .btn-open-sidebar {
+    background:red;
+  }
+  
+  .main-header-book {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .link-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .img_logo {
+  width: 55px;
+  height: auto;
+  padding: 5px;
+  border-radius: 50%;
+  }
+  
+  .img_logo:hover {
+    transition: 0.5s;
+    background: powderblue;
+    width: 70%;
+    padding: 5px;
+  }
+
+  .img_logo:active {
+  background: #71bec9;
+  }
+  
+   // ADAPTIVE
+   
+  @media (min-width: 768px) {
+    .btn-open-sidebar {
+    display: none;
+    }
+  }
