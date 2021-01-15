@@ -1,3 +1,13 @@
 export default {
-    arrayNameTheoryJs: ["Fetch", "Console", "Variable", "Sort", "Data types", 'If Else','Switch'],
+    arrayNameTheoryJs: [
+        "template-item",
+        "Console",
+        "Variable",
+        "Data types",
+        "If Else",
+        "Switch",
+        "While",
+        "Do While",
+        "For",
+    ],
 };

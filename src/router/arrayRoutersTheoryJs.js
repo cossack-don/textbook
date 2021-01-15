@@ -1,9 +1,9 @@
 const arrayRoutersTheoryJs = [
     {
-        path: "/fetch",
+        path: "/template-item",
         component: () =>
             import(
-                /* webpackChunkName: "about" */ "@/views/theoryJsPages/Fetch"
+                /* webpackChunkName: "about" */ "@/views/theoryJsPages/template-item"
             ),
     },
     {
@@ -18,13 +18,6 @@ const arrayRoutersTheoryJs = [
         component: () =>
             import(
                 /* webpackChunkName: "about" */ "@/views/theoryJsPages/Переменные"
-            ),
-    },
-    {
-        path: "/sort",
-        component: () =>
-            import(
-                /* webpackChunkName: "about" */ "@/views/theoryJsPages/Sort"
             ),
     },
     {
@@ -46,6 +39,27 @@ const arrayRoutersTheoryJs = [
         component: () =>
             import(
                 /* webpackChunkName: "about" */ "@/views/theoryJsPages/Switch"
+            ),
+    },
+    {
+        path: "/while",
+        component: () =>
+            import(
+                /* webpackChunkName: "about" */ "@/views/theoryJsPages/Цикл While"
+            ),
+    },
+    {
+        path: "/do-while",
+        component: () =>
+            import(
+                /* webpackChunkName: "about" */ "@/views/theoryJsPages/Цикл Do While"
+            ),
+    },
+    {
+        path: "/for",
+        component: () =>
+            import(
+                /* webpackChunkName: "about" */ "@/views/theoryJsPages/Цикл For"
             ),
     },
 ];

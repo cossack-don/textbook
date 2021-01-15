@@ -8,6 +8,12 @@ const routes = [
         name: "Home",
         component: () => import(/* webpackChunkName: "about" */ "@/views/Home"),
     },
+    {
+        path: "/all-links",
+        name: "Основные ссылки",
+        component: () =>
+            import(/* webpackChunkName: "about" */ "@/views/Основные ссылки"),
+    },
 ];
 
 // Routers по справочнику JS

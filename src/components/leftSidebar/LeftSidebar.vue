@@ -94,7 +94,7 @@
 
    </ul>
 <!-- end список левый-сайдбар -->
-<router-link to="">Основные ссылки</router-link>
+<router-link to="/all-links">Основные ссылки</router-link>
     </div>
 
   </div>
