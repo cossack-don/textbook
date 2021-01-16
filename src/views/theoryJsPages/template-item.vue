@@ -22,7 +22,8 @@
 <iframe src="//codepen.io/IanHazelton/embed/preview/GrPEaK/?height=400&amp;theme-id=12451&amp;default-tab=html,result&amp;embed-version=2"
  width="100%" height="500" frameborder="no" allowfullscreen="true" scrolling="no" style=""> </iframe>
 
-
+для видео с ютуба заходишь в видео нажимаешь на видео и будет скопировать html код и выдаст норм фрейм
+<iframe width="727" height="409" src="https://www.youtube.com/embed/geT5dQIaarU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 <!-- <video
   width="480"
   controls
