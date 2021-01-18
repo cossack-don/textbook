@@ -9,5 +9,7 @@ export default {
         "While",
         "Do While",
         "For",
+        "API",
+        "Distrctorization",
     ],
 };

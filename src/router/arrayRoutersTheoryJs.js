@@ -62,6 +62,18 @@ const arrayRoutersTheoryJs = [
                 /* webpackChunkName: "about" */ "@/views/theoryJsPages/Цикл For"
             ),
     },
+    {
+        path: "/api",
+        component: () =>
+            import(/* webpackChunkName: "about" */ "@/views/theoryJsPages/API"),
+    },
+    {
+        path: "/distrctorization",
+        component: () =>
+            import(
+                /* webpackChunkName: "about" */ "@/views/theoryJsPages/Диструкторизация js"
+            ),
+    },
 ];
 
 export default arrayRoutersTheoryJs;
