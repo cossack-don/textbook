@@ -94,7 +94,8 @@
 
    </ul>
 <!-- end список левый-сайдбар -->
-<router-link to="/all-links">Основные ссылки</router-link>
+<router-link to="/all-links">Основные ссылки</router-link> <br>
+<a href="http://spacemath.xyz/">матика учебник</a>
     </div>
 
   </div>

@@ -74,6 +74,13 @@ const arrayRoutersTheoryJs = [
                 /* webpackChunkName: "about" */ "@/views/theoryJsPages/Деструктуризация"
             ),
     },
+    {
+        path: "/arrow-function",
+        component: () =>
+            import(
+                /* webpackChunkName: "about" */ "@/views/theoryJsPages/Arrow function"
+            ),
+    },
 ];
 
 export default arrayRoutersTheoryJs;
