@@ -68,10 +68,10 @@ const arrayRoutersTheoryJs = [
             import(/* webpackChunkName: "about" */ "@/views/theoryJsPages/API"),
     },
     {
-        path: "/distrctorization",
+        path: "/destructuring",
         component: () =>
             import(
-                /* webpackChunkName: "about" */ "@/views/theoryJsPages/Диструкторизация js"
+                /* webpackChunkName: "about" */ "@/views/theoryJsPages/Деструктуризация"
             ),
     },
 ];

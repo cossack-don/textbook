@@ -1,6 +1,12 @@
 <template>
   <div >
     
+           <a href="https://learn.javascript.ru/destructuring"
+       class="template-link-supporting-information" target="_blank">Ссылка на документацию Деструктуризация</a>
+
+
+<a href="https://codepen.io/impertubable/pen/JjRzdgB" target="_blank" class="template-link-code-pen">Пример на Code Pen</a>
+
 <h2 class="template-title-component">Fetch</h2>
 
     <div class="template-discription-component">
@@ -19,11 +25,14 @@
       обычный текст описания
     </div>
 
+<iframe src="https://codepen.io/impertubable/details/JjRzdgB"
+ > </iframe>
+
 <iframe src="//codepen.io/IanHazelton/embed/preview/GrPEaK/?height=400&amp;theme-id=12451&amp;default-tab=html,result&amp;embed-version=2"
  width="100%" height="500" frameborder="no" allowfullscreen="true" scrolling="no" style=""> </iframe>
 
 для видео с ютуба заходишь в видео нажимаешь на видео и будет скопировать html код и выдаст норм фрейм
-<iframe width="727" height="409" src="https://www.youtube.com/embed/geT5dQIaarU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="100%" height="700" src="https://www.youtube.com/embed/geT5dQIaarU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 <!-- <video
   width="480"
   controls

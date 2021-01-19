@@ -10,6 +10,6 @@ export default {
         "Do While",
         "For",
         "API",
-        "Distrctorization",
+        "Destructuring",
     ],
 };

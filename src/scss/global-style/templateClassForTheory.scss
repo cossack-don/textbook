@@ -75,3 +75,60 @@
   width:100%;
   height:auto
 }
+// шаблон для ссылки- информация более подробная
+// .template-wrapper-link-supporting-information {
+// display: flex;
+// flex-direction: column;
+// align-items: center;
+// }
+
+// .template-wrapper-title-supporting-information {
+// background: #6f42c1;
+// color: #f8f9fa;
+// padding: 10px;
+// margin-bottom: 15px;
+// margin-top: 15px;
+// }
+
+.template-link-supporting-information {
+  display: block;
+  text-align: center;
+  margin: 0 auto;
+  max-width: 400px;
+background: #6f42c1;
+color: #ffffff;
+padding: 15px;
+border-radius: 15px;
+border: solid 2px #ffffff;
+margin-top: 15px;
+margin-bottom: 15px;
+}
+
+.template-link-supporting-information:hover {
+  transition: 0.5s;
+  color: #6f42c1;
+  background: #ffffff;
+  border: solid 2px #6f42c1;
+  border-radius: 15px;
+}
+
+// шаблон для ссылки на пример код пена
+.template-link-code-pen {
+  background: #252830;
+  color: #e3e4e8;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-bottom: 5px;
+  padding-top: 5px;
+  border-radius: 5px;
+  display: block;
+  text-align: center;
+  margin: 0 auto;
+  max-width: 200px;
+  box-shadow: 10px 10px 30px 10px rgba(34, 60, 80, 0.2);
+}
+
+.template-link-code-pen:hover {
+transition: 0.5s;
+color: #ae63e4;
+}
