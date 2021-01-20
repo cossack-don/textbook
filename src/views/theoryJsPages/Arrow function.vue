@@ -1,5 +1,9 @@
 <template>
-  <div>arrow function
+  <div>
+    пересмотреть блок по функцияс
+
+    
+    arrow function
 function sum(a,b) {
   return a+b
 }
@@ -25,7 +29,11 @@ function sum(a,b) {
 
 калл бекс тоже подучить
 
+промисы подучить
 
+контекст функции см
+
+call apply bind см и записывать
   </div>
 </template>
 
