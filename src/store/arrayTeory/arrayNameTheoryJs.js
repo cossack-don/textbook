@@ -11,6 +11,7 @@ export default {
         "For",
         "API",
         "Destructuring",
-        "Arrow function"
+        "Arrow function",
+        "JSON",
     ],
 };

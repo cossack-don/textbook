@@ -9,15 +9,19 @@
 <a href="https://codepen.io/impertubable/pen/JjRzdgB" target="_blank" class="template-link-code-pen">Пример на Code Pen</a>
 <hr style="margin-top:15px;margin-bottom:15px; background:#1dc579;">
 <h2 class="template-title-component">Fetch</h2>
+h3
+<h3 class="template-title-mini-component">if else</h3>
 <hr style="margin-top:15px;margin-bottom:15px; background:#1dc579;">
     <div class="template-discription-component">
       ОПИСАНИЕ, ОПРЕДЕЛЕНИЕ
     </div>
     <hr style="margin-top:15px;margin-bottom:15px; background:#1dc579;">
-<div class="template-code-component-wrapper">
-<code class="template-style-code" >fetch('https://api.github.com/repos/javascript-tutorial/en.javascript.info/commits') <br>
-  .then(response => response.json()) <br>
-  .then(commits => document.write(commits[0].author.id));</code>
+    <div class="template-code-component-wrapper">
+      <code class="template-style-code" >
+        function sum(a,b) { <br>
+          return a+b <br>
+        }
+      </code>
     </div>
 
 <hr style="margin-top:15px;margin-bottom:15px; background:#1dc579;">

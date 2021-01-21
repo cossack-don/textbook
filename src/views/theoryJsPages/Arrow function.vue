@@ -1,20 +1,36 @@
 <template>
   <div>
+
+    <h2 class="template-title-component">Функции в js (function, arrow function)</h2>
     пересмотреть блок по функцияс
 
-    
-    arrow function
-function sum(a,b) {
-  return a+b
-}
+    <h3 class="template-title-mini-component">Обычная функция</h3>
+
+    <div class="template-code-component-wrapper">
+      <code class="template-style-code" >
+        function sum(a, b, параметр) { <br>
+          return a+b <br>
+        }
+      </code>
+    </div>
+
+    <h3 class="template-title-mini-component">Стрелочная функция</h3>
+
+    <div class="template-code-component-wrapper">
+      <code class="template-style-code" >
+        const area = (a, b, параметр) => { <br>
+          тело функции <br>
+        }   
+      </code>
+    </div>
+
+    <div class="template-text-component">
+       Стрелочной функцией можно пользоваться после её объявления, а не как обычной, в любом месте<br>
+
+      Должно быть имя переменной обязательно для стрелочной функции
+    </div>
 
 
-    const area = (a,b) => {
-
-    }
-    доступна функция после ее обьявления
-
-    должно быть имя переменной обязательно для стрелочной
 
     почитать получше про нее и видео добавить + полезные примеры и ссылки
 

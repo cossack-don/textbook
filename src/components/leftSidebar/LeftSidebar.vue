@@ -95,7 +95,9 @@
    </ul>
 <!-- end список левый-сайдбар -->
 <router-link to="/all-links">Основные ссылки</router-link> <br>
-<a href="http://spacemath.xyz/">матика учебник</a>
+<a href="http://spacemath.xyz/" target="_blank">матика учебник</a> <br>
+<a href="https://ru.bem.info/methodology/" target="_blank">БЭМ справочник</a> <br>
+<a href="https://miragejs.com/">Mirage js</a>
     </div>
 
   </div>
