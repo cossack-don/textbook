@@ -1,5 +1,5 @@
 module.exports = {
-    // publicPath: "/group/", разкомитить
+    publicPath: "/textbook/",
     // publicPath: process.env.NODE_ENV === 'production' ?
     //   '/group/':
     //   '/'
