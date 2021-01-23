@@ -13,5 +13,12 @@ export default {
         "Destructuring",
         "Arrow function",
         "JSON",
+        "HTMLElement-hidden",
+        "Date",
+        "Try Catch",
+        "Cookies",
+        "Local Storage",
+        "Networking REST API",
+        "Fetch",
     ],
 };

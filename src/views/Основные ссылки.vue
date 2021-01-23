@@ -101,18 +101,21 @@ justify-content: center;
     background: #f8d7da;
     margin: 10px;
     padding: 10px;
+    border-radius: 15px;
 }
 
 .bg-lesson-two {
     background: #cff4fc;
     margin: 10px;
     padding: 10px;
+    border-radius: 15px;
 }
 
 .bg-lesson-three {
     background: #d1e7dd;
     margin: 10px;
     padding: 10px;
+    border-radius: 15px;
 }
 
 .mb-10 {

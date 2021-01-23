@@ -102,17 +102,22 @@ export default {
   background: #d1e7dd;
   padding: 10px;
   padding-left: 15px;
+  border-radius: 15px;
+  margin-right: 10px;
+  margin-left: 10px;
 }
 .red-bg-ul {
   background: #f8d7da;
   padding: 10px;
   padding-left: 15px;
+  border-radius: 15px;
 }
 
 .yellow-bg-ul {
   background: #fff3cd;
   padding: 10px;
   padding-left: 15px;
+  border-radius: 15px;
 }
 
 li {

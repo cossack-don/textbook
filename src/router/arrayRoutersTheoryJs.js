@@ -88,6 +88,55 @@ const arrayRoutersTheoryJs = [
                 /* webpackChunkName: "about" */ "@/views/theoryJsPages/JSON"
             ),
     },
+    {
+        path: "/HTMLElement-hidden",
+        component: () =>
+            import(
+                /* webpackChunkName: "about" */ "@/views/theoryJsPages/HTMLElement.hidden"
+            ),
+    },
+    {
+        path: "/date",
+        component: () =>
+            import(
+                /* webpackChunkName: "about" */ "@/views/theoryJsPages/Date"
+            ),
+    },
+    {
+        path: "/try-catch",
+        component: () =>
+            import(
+                /* webpackChunkName: "about" */ "@/views/theoryJsPages/Try Catch"
+            ),
+    },
+    {
+        path: "/cookies",
+        component: () =>
+            import(
+                /* webpackChunkName: "about" */ "@/views/theoryJsPages/Cookies"
+            ),
+    },
+    {
+        path: "/local-storage",
+        component: () =>
+            import(
+                /* webpackChunkName: "about" */ "@/views/theoryJsPages/Local Storage"
+            ),
+    },
+    {
+        path: "/networking-rest-api",
+        component: () =>
+            import(
+                /* webpackChunkName: "about" */ "@/views/theoryJsPages/Сетевое взаимодействие"
+            ),
+    },
+    {
+        path: "/fetch",
+        component: () =>
+            import(
+                /* webpackChunkName: "about" */ "@/views/theoryJsPages/Fetch"
+            ),
+    },
 ];
 
 export default arrayRoutersTheoryJs;

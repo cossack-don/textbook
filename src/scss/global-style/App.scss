@@ -57,3 +57,18 @@
         // width:80%;
     }
   }
+
+  @media (max-width: 576px) {
+    .wrapper-video-lesson {
+      flex-wrap: wrap;
+    }
+    
+    .wrapper-task {
+      flex-wrap: wrap;
+    }
+
+    .green-bg-ul {
+      margin-top: 15px;
+      margin-bottom: 15px;
+    }
+  }
