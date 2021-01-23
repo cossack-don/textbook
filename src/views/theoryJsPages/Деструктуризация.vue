@@ -1,31 +1,33 @@
 <template>
-  <div>Destructuring Деструктуризация массивов и обьектов  <br><br>
+  <div>
+    <h2 class="template-title-component">Destructuring Деструктуризация массивов и обьектов</h2>
+      
 
-      пересмотреть видео и сделать конспект
-    <!-- <div class="template-wrapper-link-supporting-information"> -->
-      <!-- <span class="template-wrapper-title-supporting-information">Ссылка на более подробную информацию</span> -->
-           <a href="https://learn.javascript.ru/destructuring"
-       class="template-link-supporting-information" target="_blank">Ссылка на документацию Деструктуризация</a>
-    <!-- </div> -->
- <a href="https://codepen.io/impertubable/pen/JjRzdgB" target="_blank" class="template-link-code-pen">Пример на Code Pen</a>
+    <h3 class="template-title-mini-component">Деструкторизация нужно записать элементы массива в переменные и так же с обьектами</h3>
+
+    <div class="template-text-component">
+      Важен порядок в массиве <br><br>
+      выводит по порядку массива<br>
+      let nums = [29,30,21];<br>
+      let [first, secind,therd] = nums <br>
+      часто используют сплит <br><br>
+      чтобы пропустить элемент массива используют [first, ,therd]<br>
+      чтобы установить по умолчанию значение то [first, second,therd=50]<br>
+      если 3 элемента не будет в массиве,выведется 50<br><br>
+
+      let nums = [1,3,200,30,30]<br>
+      let [num1,num2, ...rest] = nums <br>
+       ...spread оператор,выводит остальную часть массива сразу(в виде массива) например [200,30,30]
+    </div>
 
 
- деструкторизация нужно записать элементы массива в переменные и так же с обьектами
 
-важен порядок в массиве
-выводит по порядку массива
- let nums = [29,30,21];
- let [first, secind,therd] = nums
- часто используют сплит
+      <a href="https://learn.javascript.ru/destructuring"
+          class="template-link-supporting-information" target="_blank">Ссылка на документацию Деструктуризация</a>
 
- чтобы пропустить элемент массива используют [first, ,therd]
- чтобы установить по умолчанию значение то [first, second,therd=50]
- если 3 элемента не будет в массиве,выведется 50
+    <a href="https://codepen.io/impertubable/pen/JjRzdgB" target="_blank" class="template-link-code-pen">Пример на Code Pen</a>
 
-let nums = [1,3,200,30,30]
- let [num1,num2, ...rest] = nums 
 
- ...spread оператор,выводит остальную часть массива сразу(в виде массива) например [200,30,30]
   </div>
 </template>
 

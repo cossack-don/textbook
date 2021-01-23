@@ -161,7 +161,23 @@ margin-bottom: 10px;
 }
  // ADAPTIVE
 
+.btn-home-page {
+  display: flex;
+  justify-content: center;
+  background: #6f42c1;
+  border-radius: 15px;
+  width: 50%;
+  margin: 0 auto;
+  margin-top: 100%;
+  color: #ffffff;
+  padding: 10px;
+}
 
+.btn-home-page:hover {
+  transition: 0.5s;
+  background: #ffffff;
+  color: #6f42c1;
+}
 
 @media (max-width: 767px) {
   .wrapper-sidebar-main-content__left-sidebar {

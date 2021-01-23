@@ -108,14 +108,8 @@ export default {
             url:'',
             nameContent:'Minin CRM'
         },
-        {
-            url:'',
-            nameContent:'JAVASCRIPT И СКРИПТЫ VUE'
-        },
-        {
-            url:'',
-            nameContent:'lern js'
-        },
+
+
         {
             url:'',
             nameContent:'точка.dev youtob'
@@ -124,10 +118,7 @@ export default {
             url:'',
             nameContent:'Лаврик'
         },
-        {
-            url:'',
-            nameContent:'to code vue курс'
-        },
+
         {
             url:'',
             nameContent:'lern tugether progr youtobe'
@@ -152,7 +143,62 @@ export default {
             url:'https://webdevkin.ru/posts/frontend/adminka-vue-8-vuex-practice',
             nameContent:'вью практика'
         },
+        {
+            url:'https://webdevkin.ru/posts/frontend/adminka-vue-8-vuex-practice',
+            nameContent:'вью практика'
+        },
 
 
     ],
+    // ONE
+    arrayUrlsVideoOne: [
+        {
+            url:'https://learn.javascript.ru/',
+            nameContent:'Lern js'
+        },
+
+        {
+            url:'https://www.youtube.com/channel/UCwUKug4Tn0BmGrZIgcE-_LA',
+            nameContent:'JAVA И SКРИПТЫ'
+        },
+
+        {
+            url:'https://www.youtube.com/watch?v=3PDq09nqCTs&list=PLNkWIWHIRwMGLJXugVvdK7i8UagGQNaXD',
+            nameContent:'webDev -ES6 КУРС МИНИ'
+        },
+
+        {
+            url:'https://www.youtube.com/playlist?list=PLNkWIWHIRwMH7ahn9uvvc5PG3o1tLscgB',
+            nameContent:'webDev - Vue мини курс'
+        },
+
+        {
+            url:'https://www.youtube.com/watch?v=5lBf-Fm4io4',
+            nameContent:'Go Frontend канал - VUEX + VUE'
+        },
+
+        {
+            url:'https://tocode.ru/',
+            nameContent:'TO CODE vue курс'
+        },
+    ],
+
+ 
+    // TWO
+    arrayUrlsVideoTwo: [
+        {
+            url:'https://webdevkin.ru/posts/frontend/adminka-vue-8-vuex-practice',
+            nameContent:'вью практика'
+        },
+    ],
+
+
+    // THREE
+    arrayUrlsVideoThree: [
+        {
+            url:'https://webdevkin.ru/posts/frontend/adminka-vue-8-vuex-practice',
+            nameContent:'вью практика'
+        },
+    ]
 }
+

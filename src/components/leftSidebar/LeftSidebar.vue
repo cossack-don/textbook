@@ -94,10 +94,16 @@
 
    </ul>
 <!-- end список левый-сайдбар -->
-<router-link to="/all-links">Основные ссылки</router-link> <br>
-<a href="http://spacemath.xyz/" target="_blank">матика учебник</a> <br>
-<a href="https://ru.bem.info/methodology/" target="_blank">БЭМ справочник</a> <br>
-<a href="https://miragejs.com/">Mirage js</a>
+
+<br><br>
+<router-link to="/all-links">Основные ссылки видео-курсов</router-link>
+<br><br>
+
+<a href="http://spacemath.xyz/" target="_blank">Матика учебник основы</a> <br><br>
+<a href="https://ru.bem.info/methodology/" target="_blank">БЭМ справочник</a> <br><br>
+<a href="https://miragejs.com/">Mirage js</a> <br><br>
+
+<router-link to="/" class="btn-home-page">Home PAGE</router-link>
     </div>
 
   </div>
