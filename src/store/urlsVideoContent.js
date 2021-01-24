@@ -124,8 +124,8 @@ export default {
             nameContent:'lern tugether progr youtobe'
         },
         {
-            url:'',
-            nameContent:'go frontend youtobe'
+            url:'https://vk.com/im?sel=330836149&z=video-119334888_456242940%2F50cc96aa93c8153f6f%2Fpl_post_-119334888_33019',
+            nameContent:'js'
         },
         {
             url:'https://metanit.com/web/vuejs/8.2.php',
