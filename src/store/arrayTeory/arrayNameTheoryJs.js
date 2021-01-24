@@ -20,5 +20,7 @@ export default {
         "Local Storage",
         "Networking REST API",
         "Fetch",
+        "Math",
+        "Regular expressions"
     ],
 };

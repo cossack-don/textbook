@@ -137,6 +137,20 @@ const arrayRoutersTheoryJs = [
                 /* webpackChunkName: "about" */ "@/views/theoryJsPages/Fetch"
             ),
     },
+        {
+        path: "/math",
+        component: () =>
+            import(
+                /* webpackChunkName: "about" */ "@/views/theoryJsPages/Math"
+            ),
+    },
+    {
+        path: "/regular-expressions",
+        component: () =>
+            import(
+                /* webpackChunkName: "about" */ "@/views/theoryJsPages/Regular expressions"
+            ),
+    },
 ];
 
 export default arrayRoutersTheoryJs;
