@@ -21,6 +21,8 @@
   </code>
 </div>
 
+<a href="https://codepen.io/impertubable/pen/oNzrpoO?editors=1010" target="_blank" class="template-link-code-pen">Пример на Code Pen</a>
+
   </div>
 </template>
 

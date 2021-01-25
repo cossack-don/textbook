@@ -101,7 +101,8 @@
 
 <a href="http://spacemath.xyz/" target="_blank">Матика учебник основы</a> <br><br>
 <a href="https://ru.bem.info/methodology/" target="_blank">БЭМ справочник</a> <br><br>
-<a href="https://miragejs.com/">Mirage js</a> <br><br>
+<a href="https://miragejs.com/" target="_blank">Mirage js</a> <br><br>
+<a href="https://cossack-don.github.io/group/#/" target="_blank">JOB SPA</a> <br><br>
 
 <router-link to="/" class="btn-home-page">Home PAGE</router-link>
     </div>

@@ -17,6 +17,12 @@
 
     Почитать получше про нее и видео добавить + полезные примеры и ссылки web dev, как передавать анонимные стрелочные и тд, больше примеров
 
+    <div class="template-text-component">
+       Стрелочной функцией можно пользоваться после её объявления, а не как обычной, в любом месте<br>
+
+      Должна быть объявлена имя переменной обязательно для стрелочной функции
+    </div>
+
 
     <div class="template-code-component-wrapper">
       <code class="template-style-code" >
@@ -26,10 +32,76 @@
       </code>
     </div>
 
-    <div class="template-text-component">
-       Стрелочной функцией можно пользоваться после её объявления, а не как обычной, в любом месте<br>
+      <div class="template-code-component-wrapper">
+      <code class="template-style-code" >
+          Cтрелочные функции <br>
 
-      Должна быть объявлена имя переменной обязательно для стрелочной функции
+          дефолтные значения( по умолчанию )<br>
+          Это одна и та же функция<br>
+          Если мы в name не укажем ничего, то применится слово jack, и в age если не укажем ничего то будет 20<br>
+          Если напишем в name 'Vasa', в age 30 - то они и будут возвращены в 'hello Vasa your 30'<br><br>
+
+          function greet(name = 'jack', age = 20) {<br>
+          return `hello ${name} your ${age}`<br>
+          }<br><br>
+
+          function greet(name, age) {<br>
+          return `hello ${name} your ${age}`<br>
+          }  <br>
+      </code>
+    </div>
+    
+      <div class="template-code-component-wrapper">
+      <code class="template-style-code" >
+        () => {} стрелочная функция <br><br>
+
+        const greet = {name,age} => `hello ${name} your ${age}` (сразу возвращает результат) как return <br><br>
+
+
+        дефолтный вариант <br>
+        (a,b) => {<br>
+          let sum = a+b;<br>
+          return sum<br>
+        }<br><br>
+
+        в случае если используется один аргумент<br>
+        а => {<br>
+          let sum = a+b;<br>
+          return sum<br>
+        }<br><br>
+
+        когда в функции нет аргументов, круглые скобки ставим обязательно<br>
+        () => {<br>
+          let sum = a+b;<br>
+          return sum<br>
+        }<br><br>
+
+        когда тело функции пишится  в 1 строку, тогда не нужен return не нужно ничего возвращат, ни круглые скобки не ставятся<br>
+
+        a => a * 2; если 1 аргумент<br>
+        (a,b) => a*b; если 2<br><br>
+
+
+        object literal<br>
+        () => ({a:2});<br><br>
+
+        анонимная самовызывающаяся функция<br>
+        ( ( => {null}) ) ();<br><br>
+
+
+        в стрелочных функциях нельзя изменять контекст this, и нельзя использовать bind, apply, call<br><br>
+
+        let person = {<br>
+          user:'jack',<br>
+          greet:function() {<br>
+            window.setTimeout(() => {<br>
+              console.log(this.user, this)<br>
+            },1000)<br>
+          }<br>
+        }<br><br>
+
+        person.greet()  
+      </code>
     </div>
 
 
@@ -140,6 +212,8 @@
   при успешном и не успешном заверешение, выходит resolve и reject
   </div>
 
+<a href="https://codepen.io/impertubable/pen/ZEpdrjd?editors=0011"
+ target="_blank" class="template-link-code-pen">Пример на Code Pen Promise + async,await + try catch</a>
 
   <div class="template-code-component-wrapper">
   <code class="template-style-code" >
@@ -245,3 +319,12 @@ export default {
 <style>
 
 </style>
+
+
+
+
+
+
+
+
+

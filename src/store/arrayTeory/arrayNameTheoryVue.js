@@ -1,3 +1,3 @@
 export default {
-    arrayNameTheoryVue: ["Count", "CountTwo"],
+    arrayNameTheoryVue: ["Count", "CountTwo", "vue-connection"],
 };
