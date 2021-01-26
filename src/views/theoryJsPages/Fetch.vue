@@ -2,8 +2,12 @@
   <div>
     <h2 class="template-title-component">Fetch</h2>
 
-    <a href="https://only-to-top.ru/blog/programming/2019-09-17-otpravka-dannyh-fetch-api.html"
- class="template-link-supporting-information" target="_blank">Ссылка на пример обработки формы обратной связи и запросов fetch</a>
+    <a
+      href="https://only-to-top.ru/blog/programming/2019-09-17-otpravka-dannyh-fetch-api.html"
+      class="template-link-supporting-information"
+      target="_blank"
+      >Ссылка на пример обработки формы обратной связи и запросов fetch</a
+    >
 
     <div class="template-code-component-wrapper">
       <code class="template-style-code">
@@ -70,13 +74,15 @@
       </code>
     </div>
 
+    <p>
+      При обработке обычного запроса, через then на фото, нужно удалять async и
+      писать const con = () => { тело функции }
+    </p>
     <img
       src="@/assets/img/img-fetch-async-await.jpg"
       alt=""
       class="template-image"
     />
-
-    
   </div>
 </template>
 
