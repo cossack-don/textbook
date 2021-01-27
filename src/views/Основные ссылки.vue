@@ -94,6 +94,14 @@ https://itlogia.ru/article/10_resursov_dlya_izucheniya_vuejs_v_2020_godu
 
       vuejs
       https://ww1.underver.se/viewtopic.php?t=181417
+
+      https://www.youtube.com/watch?v=CjXgoYo86yY
+      https://www.youtube.com/watch?v=BIuQfQcptIU&list=PL4cUxeGkcC9g0MQZfHwKcuB0Yswgb3gA5&index=4
+
+      https://v15.vuetifyjs.com/ru/
+      https://store.vuetifyjs.com/products/vuetify-material-dashboard-pro/preview
+      https://vuetifyjs.com/en/getting-started/wireframes/#examples
+      https://v15.vuetifyjs.com/ru/framework/pre-made-layouts
     </div>
   </div>
 </template>

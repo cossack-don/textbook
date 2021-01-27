@@ -165,6 +165,13 @@ const arrayRoutersTheoryJs = [
                 /* webpackChunkName: "about" */ "@/views/theoryJsPages/FormData"
             ),
     },
+    {
+        path: "/rendering",
+        component: () =>
+            import(
+                /* webpackChunkName: "about" */ "@/views/theoryJsPages/Рендер"
+            ),
+    },
 ];
 
 export default arrayRoutersTheoryJs;

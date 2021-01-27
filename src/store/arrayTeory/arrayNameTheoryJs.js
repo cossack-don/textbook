@@ -23,6 +23,7 @@ export default {
         "Math",
         "Regular expressions",
         "Send form with fetch",
-        "Form Data"
+        "Form Data",
+        "Rendering"
     ],
 };
