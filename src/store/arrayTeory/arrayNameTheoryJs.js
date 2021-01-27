@@ -21,6 +21,8 @@ export default {
         "Networking REST API",
         "Fetch",
         "Math",
-        "Regular expressions"
+        "Regular expressions",
+        "Send form with fetch",
+        "Form Data"
     ],
 };

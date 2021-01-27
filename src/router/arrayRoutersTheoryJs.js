@@ -151,6 +151,20 @@ const arrayRoutersTheoryJs = [
                 /* webpackChunkName: "about" */ "@/views/theoryJsPages/Regular expressions"
             ),
     },
+    {
+        path: "/send-form-with-fetch",
+        component: () =>
+            import(
+                /* webpackChunkName: "about" */ "@/views/theoryJsPages/Для отправки формы на fetch"
+            ),
+    },
+    {
+        path: "/form-data",
+        component: () =>
+            import(
+                /* webpackChunkName: "about" */ "@/views/theoryJsPages/FormData"
+            ),
+    },
 ];
 
 export default arrayRoutersTheoryJs;

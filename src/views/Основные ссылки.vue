@@ -77,7 +77,9 @@
       https://www.youtube.com/channel/UChSGI2R2kRMjzXJuYqHWQZg <br />
       https://www.youtube.com/c/ITVDN/playlists <br />
       https://codepen.io/impertubable/pen/xxENvxJ <br />
-      https://www.youtube.com/channel/UCr_ImhIijOhCX7mUzBMFlaA
+      https://www.youtube.com/channel/UCr_ImhIijOhCX7mUzBMFlaA <br />
+      https://www.youtube.com/watch?v=e-E0UB-YDRk&t=7420s <br />
+      https://www.youtube.com/watch?v=jqp1PNApy3A
     </div>
   </div>
 </template>
