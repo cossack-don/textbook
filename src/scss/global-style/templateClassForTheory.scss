@@ -1,63 +1,70 @@
 // шаблон для описания компонента теории
 
-  // класс для выделения кода теории
-  .template-code-component-wrapper {
-    background: #e7ecf3;
-    border-radius: 10px;
-    padding: 15px;
-    margin: 15px;
-   display: flex;
-   justify-content: center;
-  }
-  // класс для заголовка компонента теории
-  .template-title-component {
-    color: #73abfe;
-    text-align: center;
-    padding-top: 10px;
-    padding-bottom: 20px;
-  }
-  // класс для заголовка мини компонента теории
-  .template-title-mini-component {
-    color: #73abfe;
-    text-align: center;
-    padding-top: 5px;
-    padding-bottom: 5px;
-  }
-  // класс для определения-понятия компонента теории
-  .template-discription-component {
-    border-radius: 10px;
-    padding: 15px;
-    margin: 15px;
-    background: #dc3545;
-    color: #ffffff;
-    font-weight: bold;
-  }
-  // класс для обычного текста компонента теории
-  .template-text-component {
-    padding: 15px;
-    margin: 15px;
-    border: solid 5px powderblue;
-  }
+// класс для выделения кода теории
+.template-code-component-wrapper {
+  background: #e7ecf3;
+  border-radius: 10px;
+  padding: 15px;
+  margin: 15px;
+  display: flex;
+  justify-content: center;
+}
 
-  .template-style-code {
-    color: #35495e;
-    font-size: 16px;
-    font-family: 'Noto Sans', sans-serif;
-    font-weight: bold;
-  }
+// класс для заголовка компонента теории
+.template-title-component {
+  color: #73abfe;
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 20px;
+}
+
+// класс для заголовка мини компонента теории
+.template-title-mini-component {
+  color: #73abfe;
+  text-align: center;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+// класс для определения-понятия компонента теории
+.template-discription-component {
+  border-radius: 10px;
+  padding: 15px;
+  margin: 15px;
+  background: #dc3545;
+  color: #ffffff;
+  font-weight: bold;
+}
+
+// класс для обычного текста компонента теории
+.template-text-component {
+  padding: 15px;
+  margin: 15px;
+  border: solid 5px powderblue;
+}
+
+.template-style-code {
+  color: #35495e;
+  font-size: 16px;
+  font-family: 'Noto Sans', sans-serif;
+  font-weight: bold;
+}
+
 //  шаблон выделения текста
 .template-marker-text-red {
-  color:#dc3545;
+  color: #dc3545;
 }
+
 // <span class="template-marker-text-red ">-var</span>
 
 //  шаблон выделения текста жирный
 .template-marker-text-red-bold {
-  color:#dc3545;
+  color: #dc3545;
   font-weight: bold;
 }
+
 .template-marker-text-blue-bold {
-  color:#007bff;
+  color: #007bff;
   font-weight: bold;
 }
 
@@ -72,9 +79,10 @@
 
 // шаблон адаптивной фотографии
 .template-image {
-  width:100%;
-  height:auto
+  width: 100%;
+  height: auto
 }
+
 // шаблон для ссылки- информация более подробная
 // .template-wrapper-link-supporting-information {
 // display: flex;
@@ -95,13 +103,13 @@
   text-align: center;
   margin: 0 auto;
   max-width: 400px;
-background: #6f42c1;
-color: #ffffff;
-padding: 15px;
-border-radius: 15px;
-border: solid 2px #ffffff;
-margin-top: 15px;
-margin-bottom: 15px;
+  background: #6f42c1;
+  color: #ffffff;
+  padding: 15px;
+  border-radius: 15px;
+  border: solid 2px #ffffff;
+  margin-top: 15px;
+  margin-bottom: 15px;
 }
 
 .template-link-supporting-information:hover {
@@ -129,6 +137,10 @@ margin-bottom: 15px;
 }
 
 .template-link-code-pen:hover {
-transition: 0.5s;
-color: #ae63e4;
+  transition: 0.5s;
+  color: #ae63e4;
 }
+
+// .template-color-popular-link {
+//   color: red;
+// }
