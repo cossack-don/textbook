@@ -79,7 +79,21 @@
       https://codepen.io/impertubable/pen/xxENvxJ <br />
       https://www.youtube.com/channel/UCr_ImhIijOhCX7mUzBMFlaA <br />
       https://www.youtube.com/watch?v=e-E0UB-YDRk&t=7420s <br />
-      https://www.youtube.com/watch?v=jqp1PNApy3A
+      https://www.youtube.com/watch?v=jqp1PNApy3A <br>
+
+
+https://itlogia.ru/article/10_resursov_dlya_izucheniya_vuejs_v_2020_godu
+      https://www.vuemastery.com/courses
+      https://www.vuemastery.com/
+      https://scrimba.com/allcourses?price=free&q=vue
+      https://scotch.io/courses/getting-started-with-vuejs/vue-events-build-a-counter
+
+      https://alligator.io/vuejs/
+      https://www.youtube.com/watch?v=4deVCNJq3qc
+      https://www.freecodecamp.org/news/vue-js-full-course/
+
+      vuejs
+      https://ww1.underver.se/viewtopic.php?t=181417
     </div>
   </div>
 </template>
