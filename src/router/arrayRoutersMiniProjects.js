@@ -1,9 +1,9 @@
 const arrayRoutersMiniProjects = [
     {
-        path: "/fetcha",
+        path: "/vuetify-projects",
         component: () =>
             import(
-                /* webpackChunkName: "about" */ "@/views/theoryMiniProjectPages/Fetcha"
+                /* webpackChunkName: "about" */ "@/views/theoryMiniProjectPages/Vuetify prod"
             ),
     },
 ];

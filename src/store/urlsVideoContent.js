@@ -1,9 +1,6 @@
 export default {
     arrayUrlsVideoContent: [
-        {
-            url:'https://www.youtube.com/user/megamichey85',
-            nameContent:'JS основные функции полезные'
-        },
+
         {
             url:'https://www.youtube.com/watch?v=eEF6Szpda9g&feature=emb_logo',
             nameContent:'Vue+ VUEX 43min'
@@ -152,10 +149,7 @@ export default {
     ],
     // ONE
     arrayUrlsVideoOne: [
-        {
-            url:'https://learn.javascript.ru/',
-            nameContent:'Lern js'
-        },
+
 
         {
             url:'https://www.youtube.com/channel/UCwUKug4Tn0BmGrZIgcE-_LA',
@@ -187,17 +181,27 @@ export default {
     // TWO
     arrayUrlsVideoTwo: [
         {
-            url:'https://webdevkin.ru/posts/frontend/adminka-vue-8-vuex-practice',
-            nameContent:'вью практика'
+            url:'https://ru.vuejs.org/',
+            nameContent:'Vue doc off'
         },
-    ],
-
-
-    // THREE
-    arrayUrlsVideoThree: [
         {
             url:'https://webdevkin.ru/posts/frontend/adminka-vue-8-vuex-practice',
             nameContent:'вью практика'
+        },
+
+    ],
+
+    
+    // THREE
+    arrayUrlsVideoThree: [
+        {
+            url:'https://learn.javascript.ru/',
+            nameContent:'Lern js'
+        },
+
+        {
+            url:'https://www.youtube.com/user/megamichey85',
+            nameContent:'JS основные функции полезные'
         },
     ]
 }

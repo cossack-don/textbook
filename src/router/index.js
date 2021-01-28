@@ -8,7 +8,7 @@ Vue.use(VueRouter);
 const router = new VueRouter({
     // mode: 'history',
     // base: process.env.BASE_URL,
-    // мод хистори убирает хэш, он нужен для продакшен версии для роутов
+    // мод хистори убирает хэш, он(хеш) нужен для продакшен версии для роутов
 
     routes,
 });
