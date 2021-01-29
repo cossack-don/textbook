@@ -93,8 +93,9 @@
 
     <!-- РАЗОБРАТЬ ОСТАЛОСЬ -->
     <div>
-      https://codepen.io/impertubable/pen/xxENvxJ - code pen строение обертки
-      SPA
+      https://metanit.com/web/react/2.3.php props - eto ?
+      https://qna.habr.com/q/680146 https://codepen.io/impertubable/pen/xxENvxJ
+      - code pen строение обертки SPA
       https://store.vuetifyjs.com/products/vuetify-material-dashboard-pro/preview
       https://quasar.dev/start/pick-quasar-flavour
 

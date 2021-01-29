@@ -14,6 +14,12 @@ const routes = [
         component: () =>
             import(/* webpackChunkName: "about" */ "@/views/Основные ссылки"),
     },
+    {
+        path: "/trash-links-notes",
+        name: "Мусор-ссылки-заметки",
+        component: () =>
+            import(/* webpackChunkName: "about" */ "@/views/Мусор-ссылки-заметки"),
+    },
 ];
 
 // Routers по справочнику JS

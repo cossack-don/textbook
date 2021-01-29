@@ -146,6 +146,8 @@
       <br /><br />
       <router-link to="/all-links">Основные ссылки видео-курсов</router-link>
       <br /><br />
+      <router-link to="/trash-links-notes">Мусор-ссылки-заметки</router-link>
+      <br /><br />
 
       <a href="http://spacemath.xyz/" target="_blank">Матика учебник основы</a>
       <br /><br />
