@@ -1,5 +1,5 @@
 <template>
-  <div>
+<div>
     Для отправки формы на fetch formdata-text формат
     https://codepen.io/impertubable/pen/poEMXdM?editors=1010
 
@@ -10,7 +10,7 @@
     https://codepen.io/impertubable/pen/gOLYYOP?editors=1010 отправка формы в
     формате json
     <router-link to="/fetch"> PAGE fetch</router-link>
-  </div>
+</div>
 </template>
 
 <script>

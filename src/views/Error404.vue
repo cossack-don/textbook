@@ -1,9 +1,11 @@
 <template>
     <div class="wrapper-error-404">
     <p class="wrapper-error-404__text">404 <span class="">error</span></p>
+
+    
     </div>
 </template>
-
+ 
 <script>
 export default {
 

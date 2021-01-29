@@ -1,40 +1,50 @@
 <template>
-  <div>
-      Local Storage
+<div>
 
-      в локал сторадж хранятся значения ключ - значение
-      хранятся даже после перезагрузки
-      хранятся только в строках  использую формат json для хранения 
-      для преобразования в json JSON.stringify(обьект) => будет строка
-      JSON.parse(обьект) => будет обьект
+    <h2 class="template-title-component">Local Storage</h2>
 
-      добавить в localStorage.setItem()
-      чтоб получить значение из localStorage.getItem()
-      удалить из localStorage.removeItem()
-      очистить весь localStorage.clear()
+    <div class="template-discription-component">в локал сторадж хранятся значения ключ - значение
+        хранятся даже после перезагрузки
+        хранятся только в строках использую формат json для хранения
+        для преобразования в <br> json JSON.stringify(обьект) => будет строка <br>
+        JSON.parse(обьект) => будет обьект
+    </div>
 
-sessionStorage - хранит инфу пока ты в браузере, если вышел, данные стерлись
+    <div class="template-code-component-wrapper">
+        <code class="template-style-code">
+            добавить в localStorage.setItem() <br>
+            чтоб получить значение из localStorage.getItem() <br>
+            удалить из localStorage.removeItem() <br>
+            очистить весь localStorage.clear() <br><br>
 
-sessionStorage.setItem()
-sessionStorage.getItem()
-sessionStorage.removeItem()
-sessionStorage.clear()
+            sessionStorage - хранит инфу пока ты в браузере, если вышел, данные стерлись <br><br>
 
+            sessionStorage.setItem()<br>
+            sessionStorage.getItem()<br>
+            sessionStorage.removeItem()<br>
+            sessionStorage.clear()<br>
+        </code>
+    </div>
 
-пример
+    <div class="template-code-component-wrapper">
+        <code class="template-style-code">
+            пример <br><br>
 
-const input = prompt('your name');
+            const input = prompt('your name');<br><br>
 
-const obj = {
-  name:input
-}
+            const obj = {<br>
+            name:input<br>
+            }<br><br>
 
-const jsonObj = JSON.stringify(obj);
+            const jsonObj = JSON.stringify(obj);<br>
 
-localStorage.setItem('user', jsonObj);
+            localStorage.setItem('user', jsonObj);<br>
 
-const localStorage.getItem('user')
-  </div>
+            const localStorage.getItem('user')<br>
+        </code>
+    </div>
+
+</div>
 </template>
 
 <script>

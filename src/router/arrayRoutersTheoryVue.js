@@ -23,6 +23,14 @@ const arrayRoutersTheoryVue = [
             import(
                 /* webpackChunkName: "about" */ "@/views/theoryVuePages/Basics vuex"
             ),
+    },
+    {
+        path: "/props",
+        name: "props",
+        component: () =>
+            import(
+                /* webpackChunkName: "about" */ "@/views/theoryVuePages/Props"
+            ),
     }
     
 ];

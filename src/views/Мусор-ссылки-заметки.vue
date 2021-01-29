@@ -1,5 +1,32 @@
 <template>
-  <div>Мусор-ссылки-заметки https://qna.habr.com/q/680146</div>
+  <div>Мусор-ссылки-заметки https://qna.habr.com/q/680146
+
+
+
+        <div>
+      https://metanit.com/web/react/2.3.php props - eto ?
+      https://qna.habr.com/q/680146 https://codepen.io/impertubable/pen/xxENvxJ
+      - code pen строение обертки SPA
+      https://store.vuetifyjs.com/products/vuetify-material-dashboard-pro/preview
+      https://quasar.dev/start/pick-quasar-flavour
+
+      <div>
+        <a 
+        
+          href="https://vk.com/doc43471214_580412033?hash=835031fea6b1191794&dl=d6ca56282167aecbf7"
+          >ТЗ НА ДЖУНА ДОКИ</a
+        >
+        <a
+          href="https://www.figma.com/file/k1eyyiHvBq73LMlj9dBpwX/PML_Test_task_for_Junior_Frontend-(18.12)?node-id=1%3A1636"
+          >фигма макет</a
+        >
+        <a
+          href="https://www.notion.so/Junior-Frontend-developer-aeeb4eac55634e11a855ae294fbe4404"
+          >tz</a
+        >
+      </div>
+    </div>
+  </div>
 </template>
 
 <script>
