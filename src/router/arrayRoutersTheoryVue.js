@@ -1,15 +1,8 @@
 const arrayRoutersTheoryVue = [
-    {
-        path: "/counttwo",
-        name: "CountTwo2",
-        component: () =>
-            import(
-                /* webpackChunkName: "about" */ "@/views/theoryVuePages/CountTwo"
-            ),
-    },
+
     {
         path: "/vue-connection",
-        name: "CountTwo2",
+        name: "vue-connection",
         component: () =>
             import(
                 /* webpackChunkName: "about" */ "@/views/theoryVuePages/Подключение вью"
@@ -17,7 +10,7 @@ const arrayRoutersTheoryVue = [
     },
     {
         path: "/fetch-request-in-component-vue",
-        name: "CountTwo2",
+        name: "fetch-request-in-component-vue",
         component: () =>
             import(
                 /* webpackChunkName: "about" */ "@/views/theoryVuePages/Запрос fetch в компоненте вью"
@@ -25,7 +18,7 @@ const arrayRoutersTheoryVue = [
     },
     {
         path: "/basics-vuex",
-        name: "CountTwo2",
+        name: "basics-vuex",
         component: () =>
             import(
                 /* webpackChunkName: "about" */ "@/views/theoryVuePages/Basics vuex"
