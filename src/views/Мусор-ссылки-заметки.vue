@@ -1,7 +1,7 @@
 <template>
   <div>Мусор-ссылки-заметки https://qna.habr.com/q/680146
 
-
+https://www.youtube.com/playlist?list=PLCMvV-acWe2DOE8ZBL2M5g2O70noa6A12
 
         <div>
       https://metanit.com/web/react/2.3.php props - eto ?
