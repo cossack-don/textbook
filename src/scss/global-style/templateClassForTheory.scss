@@ -144,3 +144,22 @@
 // .template-color-popular-link {
 //   color: red;
 // }
+
+//  Шаблон ссылки(роутер) на другой компонент если уроки тесно связаны, форма обратной связи и fetch
+.template-link-for-similar-topic {
+display: flex;
+justify-content: center;
+padding: 15px;
+max-width: 200px;
+background: #007bff;
+border-radius: 5px;
+color:#ffffff;
+margin: 15px auto;
+}
+
+.template-link-for-similar-topic:hover {
+  background: #ffffff;
+  color: #007bff;
+  transition: 0.5s;
+  border: 2px solid #007bff;
+}

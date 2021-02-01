@@ -1,8 +1,8 @@
 <template>
   <div>
-      vue connection подключение вью
+      
 
-
+<h2 class="template-title-component">Vue connection - подключение вью</h2>
       https://codepen.io/impertubable/pen/WNGqdPZ
   </div>
 </template>

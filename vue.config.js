@@ -3,5 +3,5 @@ module.exports = {
     publicPath: process.env.NODE_ENV === 'production' ?
       '/textbook/':
       '/'
-    // используется для продакшена '/group/' имя репозитория
+    // используется для продакшена '/textbook/' имя репозитория
 };

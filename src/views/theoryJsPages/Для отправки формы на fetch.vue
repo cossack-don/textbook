@@ -1,6 +1,8 @@
 <template>
 <div>
-    Для отправки формы на fetch formdata-text формат
+
+    <h2 class="template-title-component">Для отправки формы на fetch formdata-text формат</h2>
+    
     https://codepen.io/impertubable/pen/poEMXdM?editors=1010
 
     <br />
@@ -9,7 +11,7 @@
     <br />
     https://codepen.io/impertubable/pen/gOLYYOP?editors=1010 отправка формы в
     формате json
-    <router-link to="/fetch"> PAGE fetch</router-link>
+    <router-link to="/fetch" class="template-link-for-similar-topic">PAGE fetch</router-link>
 </div>
 </template>
 
@@ -18,4 +20,5 @@ export default {};
 </script>
 
 <style>
+
 </style>

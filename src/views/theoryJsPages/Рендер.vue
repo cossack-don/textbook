@@ -1,6 +1,8 @@
 <template>
   <div>
-    рендер, рендеринг
+    <h2 class="template-title-component">Рендер, Рендеринг страницы</h2>
+    
+    <div class="template-discription-component">ОПИСАНИЕ, ОПРЕДЕЛЕНИЕ</div>
     
   </div>
 </template>

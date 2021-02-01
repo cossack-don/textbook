@@ -10,6 +10,8 @@ https://www.youtube.com/playlist?list=PLCMvV-acWe2DOE8ZBL2M5g2O70noa6A12
       https://store.vuetifyjs.com/products/vuetify-material-dashboard-pro/preview
       https://quasar.dev/start/pick-quasar-flavour
 
+
+https://www.youtube.com/playlist?list=PLmRNNqEA7JoOF9d6cMrhExfEUig-yE-gz
       <div>
         <a 
         
