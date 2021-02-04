@@ -1,6 +1,12 @@
 <template>
   <div>Мусор-ссылки-заметки https://qna.habr.com/q/680146
+https://www.youtube.com/watch?v=QTklKBndYgg&feature=emb_logo
+https://www.youtube.com/watch?v=yWtmBz-HodM&feature=emb_logo
 
+vue+php+mysql посм как запросы и извлечение из бд происходит
+
+https://coreui.io/vue-laravel/?affChecked=1#compare
+https://quasar.dev/vue-components/skeleton
 https://www.youtube.com/playlist?list=PLCMvV-acWe2DOE8ZBL2M5g2O70noa6A12
 
         <div>
