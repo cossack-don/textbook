@@ -20,6 +20,7 @@
           <!-- Поиск по категориям (теория джс, проекты вью) -->
           <input
             @input="searchValue = $event.target.value"
+            @keyup.esc="cleanInputSearchOnKeyupEsc"
             v-model="searchValue"
             type="text"
             placeholder="Поиск"
@@ -197,6 +198,10 @@ export default {
     },
 
     btnCleanSearch() {
+      this.searchValue = "";
+    },
+
+    cleanInputSearchOnKeyupEsc() {
       this.searchValue = "";
     },
 
