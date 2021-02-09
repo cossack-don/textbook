@@ -1,6 +1,7 @@
 <template>
   <div>
-    Мусор-ссылки-заметки https://qna.habr.com/q/680146
+    https://playcode.io/734838/ Мусор-ссылки-заметки
+    https://qna.habr.com/q/680146
     https://www.youtube.com/watch?v=QTklKBndYgg&feature=emb_logo
     https://www.youtube.com/watch?v=yWtmBz-HodM&feature=emb_logo vue+php+mysql
     посм как запросы и извлечение из бд происходит

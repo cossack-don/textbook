@@ -161,6 +161,10 @@
         >JOB SPA</a
       >
       <br /><br />
+      <a href="https://playcode.io/734838/" target="_blank">JS pen</a>
+      <br /><br />
+      <a href="https://github.com/" target="_blank">GitHub</a>
+      <br /><br />
 
       <router-link to="/" class="btn-home-page">Home PAGE</router-link>
     </div>

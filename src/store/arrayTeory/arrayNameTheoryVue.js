@@ -10,7 +10,15 @@ export default {
          "V-for",
          "Computed Watch",
          "Communication with components",
-         "V-model"
-    
+         "V-model",
+        "Project-lifecycle",
+        "Interpolation",
+        "Methods",
+        "Computed",
+        "Refs",
+        "Modifiers",
+        "Utility",
+        "Event Bus",
+        "Vue Mixins"
         ],
 };
