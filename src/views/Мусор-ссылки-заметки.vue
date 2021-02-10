@@ -1,5 +1,9 @@
 <template>
   <div>
+    <h3>mirage - vue- video</h3>
+    https://www.youtube.com/results?search_query=mirage+js
+    https://miragejs.com/quickstarts/overview/
+    <hr />
     https://playcode.io/734838/ Мусор-ссылки-заметки
     https://qna.habr.com/q/680146
     https://www.youtube.com/watch?v=QTklKBndYgg&feature=emb_logo
