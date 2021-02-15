@@ -15,6 +15,14 @@
       target="_blank"
       >Ссылка на документацию code me</a
     >
+
+    <a
+      href="https://codepen.io/impertubable/pen/poEMXdM?editors=1010"
+      target="_blank"
+      class="template-link-code-pen"
+      style="margin-bottom: 15px"
+      >Пример на Code Pen FormData-формат</a
+    >
   </div>
 </template>
 
