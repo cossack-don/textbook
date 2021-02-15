@@ -137,7 +137,7 @@ const arrayRoutersTheoryJs = [
                 /* webpackChunkName: "about" */ "@/views/theoryJsPages/Fetch"
             ),
     },
-        {
+    {
         path: "/math",
         component: () =>
             import(
@@ -170,6 +170,13 @@ const arrayRoutersTheoryJs = [
         component: () =>
             import(
                 /* webpackChunkName: "about" */ "@/views/theoryJsPages/Рендер"
+            ),
+    },
+    {
+        path: "/methods-for-array",
+        component: () =>
+            import(
+                /* webpackChunkName: "about" */ "@/views/theoryJsPages/Methods for Array"
             ),
     },
 ];

@@ -24,6 +24,7 @@ export default {
         "Regular expressions",
         "Send form with fetch",
         "Form Data",
-        "Rendering"
+        "Rendering",
+        "Methods for Array",
     ],
 };
