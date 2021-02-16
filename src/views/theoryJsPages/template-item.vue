@@ -1,12 +1,13 @@
 <template>
   <div>
     <!-- ------------------------------------------------------------------------COMMENT -RAZDELITEL________________________________________________________________ -->
- <hr style="margin-top: 15px; margin-bottom: 15px; background: #1dc579" />
- <h1>Ссылка на другой компонент - по роутам vue</h1>
-<router-link to="/fetch" class="template-link-for-similar-topic">PAGE fetch</router-link>
+    <hr style="margin-top: 15px; margin-bottom: 15px; background: #1dc579" />
+    <h1>Ссылка на другой компонент - по роутам vue</h1>
+    <router-link to="/fetch" class="template-link-for-similar-topic"
+      >PAGE fetch</router-link
+    >
 
-
-<!--  -->
+    <!--  -->
     <hr style="margin-top: 15px; margin-bottom: 15px; background: #1dc579" />
     <h1>Ссылка на документацию</h1>
     <a
@@ -27,7 +28,10 @@
     >
     <hr style="margin-top: 15px; margin-bottom: 15px; background: #1dc579" />
     <!--  -->
-
+    <h1>Выделение одного слова красным</h1>
+    <span class="template-color-word">Fetch</span>
+    <hr style="margin-top: 15px; margin-bottom: 15px; background: #1dc579" />
+    <!--  -->
     <h1>Заголовок h2</h1>
     <h2 class="template-title-component">Fetch</h2>
     <hr style="margin-top: 15px; margin-bottom: 15px; background: #1dc579" />
