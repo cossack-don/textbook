@@ -1,5 +1,22 @@
 <template>
   <div>
+    <h1>Hit курсы смотреть!</h1>
+    <ul>
+      <li>https://www.youtube.com/playlist?list=PLNkWIWHIRwMGLJXugVvdK7i8UagGQNaXD JS</li>
+      <li>https://www.youtube.com/playlist?list=PLu_62Q68DvTrWAR_3-iOfIdbqKU912i3z</li>
+      <li>https://www.youtube.com/channel/UCjCQSEgi49fZyDx5VpxYnOA/playlists</li>
+      <li>https://www.youtube.com/playlist?list=PLvpsu6rFEzwXtXe3bUQp5pCa6dG2z6S7t</li>
+      <li>https://www.youtube.com/playlist?list=PLiZoB8JBsdznAXu9WxE5NWfPwp22XWnM7  JS</li>
+      
+      <li></li>
+      <li>https://www.youtube.com/watch?v=lm9olMCRCIc&list=PLqKQF2ojwm3lrzkYrqnxh6qywB99dCyCt&index=13&t=1081s</li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li>https://metanit.com/web/javascript/9.1.php</li>
+      <li>https://www.youtube.com/watch?v=teDrWas0MTc&list=PLvpsu6rFEzwVQOlPAlXSYmSoruOLTG2SE</li>
+    </ul>
 
     <h2 class="template-title-component">Полезные советы</h2>
     <div class="template-code-component-wrapper">

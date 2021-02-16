@@ -119,6 +119,14 @@
     function expression let sum1 = function(a,b) { return a+b}
 
     <!-- THIS -->
+
+    сall apply bind
+
+    bind создает обертку не вызывает функцию
+
+    call- 
+
+    почитать еще про this.call,apply,bind,каллбек,рекурсию,
   </div>
 </template>
 
