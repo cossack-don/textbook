@@ -1,5 +1,10 @@
 <template>
   <div>
+    <a href="https://getbootstrap.com/docs/4.0/getting-started/download/"
+      >Только сетка будстрап Скачиваете Source files, dist > css >
+      boostrap-grid.css / bootstrap-grid.min.css</a
+    >
+
     <h3>mirage - vue- video</h3>
     https://www.youtube.com/results?search_query=mirage+js
     https://miragejs.com/quickstarts/overview/
