@@ -179,6 +179,27 @@ const arrayRoutersTheoryJs = [
                 /* webpackChunkName: "about" */ "@/views/theoryJsPages/Methods for Array"
             ),
     },
+    {
+        path: "/for-of",
+        component: () =>
+            import(
+                /* webpackChunkName: "about" */ "@/views/theoryJsPages/For of"
+            ),
+    },
+    {
+        path: "/spread-rest-operators",
+        component: () =>
+            import(
+                /* webpackChunkName: "about" */ "@/views/theoryJsPages/Spread REST operators"
+            ),
+    },
+    {
+        path: "/class",
+        component: () =>
+            import(
+                /* webpackChunkName: "about" */ "@/views/theoryJsPages/Class"
+            ),
+    },
 ];
 
 export default arrayRoutersTheoryJs;

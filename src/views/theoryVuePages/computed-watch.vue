@@ -31,6 +31,31 @@
 
 
 $set, $delete, $get - ознакомиться
+
+
+watch - отслеживает данные, например инпута
+  <!-- template: `
+  <div class="counter">
+    <div class="counter-value">
+     
+    </div>
+    <input v-model="go">
+    <button>Increment</button>
+  </div>
+  `,
+  
+  data() {
+    return {
+      go: 0
+    }
+  },
+
+  watch:{
+    go(value) {
+      console.log(value)
+    }
+  }
+} -->
   </div>
 </template>
 

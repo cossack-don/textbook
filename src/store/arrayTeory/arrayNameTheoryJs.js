@@ -26,5 +26,8 @@ export default {
         "Form Data",
         "Rendering",
         "Methods for Array",
+        "For of",
+        "Spread REST operators",
+        "Class"
     ],
 };
