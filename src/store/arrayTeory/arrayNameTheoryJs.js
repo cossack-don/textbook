@@ -28,6 +28,7 @@ export default {
         "Methods for Array",
         "For of",
         "Spread REST operators",
-        "Class"
+        "Class",
+        "Mock"
     ],
 };

@@ -200,6 +200,13 @@ const arrayRoutersTheoryJs = [
                 /* webpackChunkName: "about" */ "@/views/theoryJsPages/Class"
             ),
     },
+    {
+        path: "/mock",
+        component: () =>
+            import(
+                /* webpackChunkName: "about" */ "@/views/theoryJsPages/Mock"
+            ),
+    },
 ];
 
 export default arrayRoutersTheoryJs;

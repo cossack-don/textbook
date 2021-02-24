@@ -1,18 +1,25 @@
 <template>
   <div>
-      Циклы for of, for in для массивов
+      
+  <h2 class="template-title-component">Циклы for of, for in для массивов</h2>
+      <div class="template-code-component-wrapper">
+      <code class="template-style-code">
+        Массив let arr = [ 'Mri', 'Lux', 'Jan', 'Den'] <br><br>
 
-     массив let arr = [ 'Mri', 'Lux', 'Jan', 'Den']
+        FOR OF - возвращает сразу значение из массива  'Mri', 'Lux', 'Jan', 'Den'<br>
+        for(item of arr ) {<br>
+          console.log(item)<br>
+        }<br><br>
 
-FOR OF - возвращает сразу значение из массива  'Mri', 'Lux', 'Jan', 'Den'
-for(item of arr ) {
-  console.log(item)
-}
+        FOR IN возвращает индексы значений, т.е. 0,1,2,3 в зависимости от длинны массива<br>
+        for(item in arr) {<br>
+          console.log(item)<br>
+        }<br>
+      </code>
+    </div>
+     
 
-FOR IN возвращает индексы значений, т.е. 0,1,2,3 в зависимости от длинны массива
-for(item in arr) {
-  console.log(item)
-}
+
   </div>
 </template>
 

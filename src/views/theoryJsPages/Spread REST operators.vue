@@ -1,6 +1,12 @@
 <template>
-  <div>Spread REST operators
+  <div>
+<h2 class="template-title-component">Spread REST operators</h2>
 
+    <div class="template-code-component-wrapper">
+      <code class="template-style-code">
+
+      </code>
+    </div>
       оператор разворачивания и оператор сварачивания
 
       spread - разворот 

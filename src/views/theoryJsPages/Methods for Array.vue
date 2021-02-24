@@ -82,51 +82,68 @@
       </code>
     </div>
 
-    <!-- 
-  
- -->https://www.youtube.com/watch?v=tCGiKGNmMbE&list=PLNkWIWHIRwMHKLotIS_d-wyj00pg0AnUg&index=10
-    <br />
-    webdev функции высшего порядка <br />
-    forEach (item, index, array) - обход для каждого элемента, ничего не
-    возвращает response = JSON let newArray = [] let getNames = fucntion (elem)
-    { newArray.push(elem.name) } response.forEach(getNames)
-    console.log(newArray) <br />
-    метод map <br />
-    не изменяет исходной массив - возврвщает новый массив const arr =
-    [1,2,3,4,5,6,7]; const newArray = arr.map(item => { return item * 2 })
-    console.log(arr) console.log(newArray) пример если json отфильтровать нужно
-    const obj = [ {name:'Vasa', year:23 }, {name:'goga', year:2333 }, ] const
-    newArray = obj.map(item => { return { name:item.name, // year:item.year } })
-    console.log(newArray) <br />
 
-    filter <br />
+      <h3 class="template-title-mini-component">Webdev функции высшего порядка</h3>
+     <br />
 
-    every,some своеобразные фильтры - больше используются для проверки <br />
-    every - проверяет пробегается по массиву проверят по условию если все
-    условия выполняются, возвращает true, если хотя бы одно условие не
-    выполняется возвращается false <br />
-    some - вернет тру, если хотя бы один элемент пройдет проверку <br />
+      <div class="template-code-component-wrapper">
+      <code class="template-style-code">
+        <span class="template-color-word">forEach (item, index, array)</span>
+        - обход для каждого элемента, ничего не возвращает response = JSON let newArray = [] <br> let getNames = fucntion (elem)
+        { newArray.push(elem.name) } response.forEach(getNames)
+        console.log(newArray)
+      </code>
+    </div>
 
-    методы – reduce и reduceRight br для вычесления <br />
-    слева на права и справа на лево -посмотреть более подробней
 
-    <br />
-    псевдомассив - arguments <br />
-    function go() { console.log(arguments) } go('a','b','c') <br />
+      <div class="template-code-component-wrapper">
+      <code class="template-style-code">
+        <span class="template-color-word">Метод map</span> не изменяет исходной массив - возврвщает новый массив и возвращает такой же по длинне массив,от исходного <br>
+         const arr = [1,2,3,4,5,6,7]; <br>
+          const newArray = arr.map(item => { return item * 2 }) <br>
+          console.log(arr)<br>
+          console.log(newArray)<br><br>
+          Пример если json отфильтровать нужно<br>
+          const obj = [ {name:'Vasa', year:23 }, {name:'goga', year:2333 }, ]<br>
+          const newArray = obj.map(item => { return { name:item.name, // year:item.year } })<br>
+          console.log(newArray)
+      </code>
+    </div>
 
-    function decloration - function sum (a,b) {return a + b} <br />
-    можно вызвать до объявления функции <br />
-    function expression let sum1 = function(a,b) { return a+b}
+    <div class="template-code-component-wrapper">
+      <code class="template-style-code">
+        <span class="template-color-word">every,some своеобразные фильтры</span>
 
-    <!-- THIS -->
+     - больше используются для проверки every - проверяет пробегается по массиву проверят по условию если все
+    условия выполняются, возвращает true, если хотя бы одно условие не выполняется возвращается false <br />
+    some - вернет тру, если хотя бы один элемент пройдет проверку
+      </code>
+    </div>
 
-    сall apply bind
+    <div class="template-code-component-wrapper">
+      <code class="template-style-code">
+        <span class="template-color-word">методы – reduce и reduceRigh</span>
 
-    bind создает обертку не вызывает функцию
+        посмотреть более подробней
+      </code>
+    </div>
 
-    call- 
+      <div class="template-code-component-wrapper">
+      <code class="template-style-code">
+        <span class="template-color-word">Псевдомассив - arguments</span>
+        function go() { console.log(arguments) } go('a','b','c') <br />
+      </code>
+    </div>
 
-    почитать еще про this.call,apply,bind,каллбек,рекурсию,
+      <div class="template-code-component-wrapper">
+      <code class="template-style-code">
+        <span class="template-color-word">function decloration</span> - function sum (a,b) {return a + b} <br />
+        можно вызвать до объявления функции <br />
+         <span class="template-color-word">function expression</span>
+         let sum1 = function(a,b) { return a+b}
+      </code>
+    </div>
+         
   </div>
 </template>
 
