@@ -3,7 +3,7 @@
     <h2 class="template-title-component">VUEX ОСНОВЫ</h2>
 
     <img src="@/assets/img/vuex-live.jpg" alt="" class="template-image" />
-
+    <img src="@/assets/img/vuex-state.jpg" alt="" class="template-image" />
     <a
       href="https://www.youtube.com/watch?v=c2SK1IlmYL8"
       class="template-link-supporting-information"

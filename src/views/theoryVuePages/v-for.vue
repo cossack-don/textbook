@@ -1,39 +1,44 @@
 <template>
-  <div>v-for
+  <div>
+<h2 class="template-title-component">v-for</h2>
 
-ul
-key - не должен повторяться
-    li v-for="item,index" in array :key = index массива или id { значение item} {значение index}
+    <div class="template-code-component-wrapper">
+      <code class="template-style-code">
+            key - не должен повторяться <br><br>
+                li v-for="item,index" in array :key = index массива или id { значение item} {значение index}<br><br>
 
-если перебираем объекты в массиве то item.value :key = item.id 
-li v-for=item in obj :key = item.id  {item.id} {item.value}
+            если перебираем объекты в массиве то item.value :key = item.id <br>
+            li v-for=item in obj :key = item.id  {item.id} {item.value}<br><br>
 
-если перебор объекта
-v-for="(value, name, index") in objTwo :key="index"  --  {index} {name} {value}
+            если перебор объекта<br><br>
+            v-for="(value, name, index") in objTwo :key="index"  --  {index} {name} {value}<br><br>
 
-data() {
-    return {
-        array:[1,2,3,4,],
-        obj: [
-        {
-            value:111111,
-            id:0
-        },
-        {
-            value:2222,
-            id:1
-        }
-        ],
+            data() {<br>
+                return {<br>
+                    array:[1,2,3,4,],<br>
+                    obj: [<br>
+                    {<br>
+                        value:111111,<br>
+                        id:0<br>
+                    },<br>
+                    {<br>
+                        value:2222,<br>
+                        id:1<br>
+                    }<br>
+                    ],<br>
 
-        objTwo: {
-            value:'hello',
-            id:1,
-            tel:900033
-        }
-    }
-}
+                    objTwo: {<br>
+                        value:'hello',<br>
+                        id:1,<br>
+                        tel:900033<br>
+                    }<br>
+                }<br>
+            }<br><br>
 
-$set, $delete - ознакомиться
+            $set, $delete - ознакомиться
+      </code>
+    </div>
+
   </div>
 </template>
 
