@@ -29,6 +29,7 @@ export default {
         "For of",
         "Spread REST operators",
         "Class",
-        "Mock"
+        "Mock",
+        "Pagination"
     ],
 };
