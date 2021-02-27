@@ -214,6 +214,13 @@ const arrayRoutersTheoryJs = [
                 /* webpackChunkName: "about" */ "@/views/theoryJsPages/Pagination"
             ),
     },
+    {
+        path: "/map-set",
+        component: () =>
+            import(
+                /* webpackChunkName: "about" */ "@/views/theoryJsPages/Map Set"
+            ),
+    },
 ];
 
 export default arrayRoutersTheoryJs;

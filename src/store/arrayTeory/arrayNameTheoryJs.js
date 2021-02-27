@@ -30,6 +30,7 @@ export default {
         "Spread REST operators",
         "Class",
         "Mock",
-        "Pagination"
+        "Pagination",
+        "Map Set"
     ],
 };
