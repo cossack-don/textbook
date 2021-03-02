@@ -27,6 +27,12 @@
       </code>
     </div>
 
+    <a
+      href="https://habr.com/ru/company/mailru/blog/350962/"
+      class="template-link-supporting-information"
+      target="_blank"
+      >Ссылка на habr статью о хуках</a
+    >
 
     <img src="@/assets/img/lifeSicle.png" alt="" class="template-image">
   </div>
