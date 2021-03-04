@@ -1,5 +1,12 @@
 <template>
   <div>
+    <h1>ссылки по изучению вордпресса</h1>
+    https://www.youtube.com/playlist?list=PL5FCJIdFxiLnKH1nyfLevlQtL5m9zh_dL
+    <br />
+    https://www.youtube.com/playlist?list=PLCMvV-acWe2AGoa0jYd5_UmjPSqAjuOlB
+    <br />
+    https://www.youtube.com/playlist?list=PLVk5Ez12gVOnBvXaezQG-RtU9ZKb9KGg4
+    <hr />
     <h1>Hit курсы смотреть!</h1>
     <ul>
       <li>
