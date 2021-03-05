@@ -1,3 +1,3 @@
 export default {
-    arrayNameMiniProjects: [ "Vuetify projects"],
+    arrayNameMiniProjects: [ "Vuetify projects", "Mini prodject codepen"],
 };
