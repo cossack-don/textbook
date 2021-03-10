@@ -221,6 +221,13 @@ const arrayRoutersTheoryJs = [
                 /* webpackChunkName: "about" */ "@/views/theoryJsPages/Map Set"
             ),
     },
+    {
+        path: "/object-assign",
+        component: () =>
+            import(
+                /* webpackChunkName: "about" */ "@/views/theoryJsPages/Object assign"
+            ),
+    },
 ];
 
 export default arrayRoutersTheoryJs;
