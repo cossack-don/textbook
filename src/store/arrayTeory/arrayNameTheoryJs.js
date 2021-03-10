@@ -32,6 +32,7 @@ export default {
         "Mock",
         "Pagination",
         "Map Set",
-        "Object assign"
+        "Object assign",
+        "New Object"
     ],
 };
